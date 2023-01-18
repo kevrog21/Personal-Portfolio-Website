@@ -367,6 +367,10 @@ header {
 }
 
 .bkgd_secondary {
+	background: #E8D9BF;
+}
+
+.bkgd_tertiary {
 	background: #000000;
 }
 
