@@ -1,0 +1,387 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Need this for responsive! specifies that IE should run in the highest mode available to that version of IE as opposed to a compatability mode; IE8 can support up to IE8 modes, IE9 can support up to IE9 modes, and so on. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="a website showcasing the graphic design creations of Kevin Rogers, a graphic design student at Las Positas College in Livermore, California.">
+<meta name="Keywords" content="portfolio, graphic design, kevin rogers, Phoenix graphic designer, Las Positas College">
+<title>Kevin's Portfolio</title>
+<link rel="shortcut icon" type="image/svg" href="media/kevrog_logo_black.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet" type="text/css">
+	
+
+<!--Scalable Vector Graphic-->
+<svg xmlns="http://www.w3.org/2000/svg"  style="display:none;">
+  <symbol id="dribbble_icon" class="svg_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.39 35.39">
+    <path d="M38.36,13.47a16.53,16.53,0,0,0-21.45-3.19,2.38,2.38,0,0,0-2.88.14A18.11,18.11,0,0,0,37.54,38a2.36,2.36,0,0,0,.6-2.82,16.48,16.48,0,0,0,.22-21.69ZM18.67,35.52a13.11,13.11,0,0,1-3.05-2.64,13.28,13.28,0,0,1-3.18-8.71,19.14,19.14,0,0,0,3.16-.66,46.73,46.73,0,0,0,5.28-1.68,23.2,23.2,0,0,0,2.36-1.13,73.65,73.65,0,0,1,4.22,8.37A52,52,0,0,0,18.67,35.52Zm9.4-5q1.23,3.07,2.17,6.24a13.4,13.4,0,0,1-10.07-.48A49.87,49.87,0,0,1,28.07,30.55ZM20.28,20.37A48.62,48.62,0,0,1,15.18,22a18.76,18.76,0,0,1-2.64.59A13.33,13.33,0,0,1,17.11,14a2.29,2.29,0,0,0,.75-1.22,69.9,69.9,0,0,1,4.55,6.53A23.14,23.14,0,0,1,20.28,20.37Zm14.18,14a13.48,13.48,0,0,1-2.76,1.8q-1-3.24-2.24-6.38a26.82,26.82,0,0,1,11.06-3.12A14.78,14.78,0,0,1,37,34,2.38,2.38,0,0,0,34.46,34.37Zm2.7-19.87A14.85,14.85,0,0,1,40.7,25.08a28.34,28.34,0,0,0-11.84,3.23,75.13,75.13,0,0,0-4.25-8.4A24.54,24.54,0,0,0,33,11.1,14.8,14.8,0,0,1,37.16,14.5ZM25.78,9.26a15,15,0,0,1,5.74,1.16,23,23,0,0,1-7.74,8.14,72.84,72.84,0,0,0-5.22-7.43A14.83,14.83,0,0,1,25.78,9.26Z" transform="translate(-7.68 -7.69)"></path>
+  </symbol>
+  <symbol id="email_icon" class="svg_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.39 35.39">
+    <path d="M38.37,13.48a16.51,16.51,0,0,0-21.46-3.2,2.38,2.38,0,0,0-2.88.15A18.11,18.11,0,0,0,24.36,42.26c.49,0,1,.06,1.46.06A18,18,0,0,0,37.55,38a2.38,2.38,0,0,0,.6-2.81,16.51,16.51,0,0,0,.22-21.69Zm2.32,11.91A14.79,14.79,0,0,1,37,34a2.38,2.38,0,0,0-2.56.33A13.36,13.36,0,1,1,17.12,14a2.38,2.38,0,0,0,.73-2.48,14.75,14.75,0,0,1,7.92-2.3c.4,0,.8,0,1.2,0A15,15,0,0,1,40.69,25.39Z" transform="translate(-7.68 -7.68)"></path>
+    <path d="M33.55,17.36H18a2.55,2.55,0,0,0-2.54,2.55v8.6A2.54,2.54,0,0,0,18,31.05H33.55a2.54,2.54,0,0,0,2.54-2.54v-8.6A2.55,2.55,0,0,0,33.55,17.36ZM33,19l-6.8,6.56a.4.4,0,0,1-.55,0L17.92,19,18,19Zm1.52,9.56a1,1,0,0,1-1,1H18a1,1,0,0,1-1-1V20.32l7.55,6.41a2,2,0,0,0,1.29.48,2,2,0,0,0,1.38-.57l7.18-6.93a1.42,1.42,0,0,1,0,.2Z" transform="translate(-7.68 -7.68)"></path>
+  </symbol>
+  <symbol id="kevrog_logo" class="svg_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.34 41.5">
+    <path d="M31.77,28c1.88,0,2,1.41,2,2.8,0,.87-.19,2.36-.19,3.06,0,.26,0,.43.19.43.38,0,3.18-3.89,4.38-5.14a2.32,2.32,0,0,1,1.77-.91c1.13,0,1.9.54,1.9,1.74A3.32,3.32,0,0,1,41.05,32c-1.67,2-4.29,3.54-4.26,3.89a16.6,16.6,0,0,0,4.61,3.88,2.25,2.25,0,0,1,1.32,2.05,1.91,1.91,0,0,1-2.1,1.86c-1.36,0-2.52-1.15-3.32-2-2.14-2.12-3.36-4.1-3.74-4.1-.1,0-.14.07-.14.23a34.34,34.34,0,0,1,.23,3.51c0,1.6-.37,2.45-2.09,2.45-1.46,0-1.89-1-1.89-2.38,0-2,.24-3.13.24-5.51,0-2.14-.24-3.46-.24-4.9C29.67,29.3,30,28,31.77,28Z" transform="translate(-14.83 -15.25)"></path>
+    <path d="M36.24,22a10.08,10.08,0,0,1,2.85.42,11.55,11.55,0,0,1,2.57,1.09,19.17,19.17,0,0,1,4.18,3.29c.15.14.31.32.46.48s.3.35.45.52a12.45,12.45,0,0,1,.81,1.1,14,14,0,0,1,1.3,2.41A14.72,14.72,0,0,1,49,41.93a13.46,13.46,0,0,1-3,4.59,9.9,9.9,0,0,1-2.27,1.75,11.76,11.76,0,0,1-2.6,1.09,15.73,15.73,0,0,1-2.67.52l-.66.06-.66,0-.65,0h-.66a15.11,15.11,0,0,1-2.75-.24A12.69,12.69,0,0,1,30.41,49,11.84,11.84,0,0,1,28,47.49c-.18-.15-.37-.29-.54-.45l-.26-.23-.26-.24-.25-.24-.22-.23L26,45.63a22.81,22.81,0,0,1-1.7-2,13.88,13.88,0,0,1-1.41-2.4A10,10,0,0,1,22,38.43a5.66,5.66,0,0,1-.08-.72c0-.13,0-.25,0-.37v-.72l0-.34L22,36l0-.33c.11-.88.26-1.75.44-2.62a15.89,15.89,0,0,1,.75-2.56A13.94,13.94,0,0,1,24.46,28c.13-.2.27-.39.4-.58s.28-.37.43-.56.31-.35.47-.53l.5-.5a13.9,13.9,0,0,1,2.21-1.64A17.67,17.67,0,0,1,30.91,23a16.88,16.88,0,0,1,2.61-.74A15.3,15.3,0,0,1,36.24,22Zm0,3.26a12,12,0,0,0-2.15.18,12.86,12.86,0,0,0-2.12.52A11.42,11.42,0,0,0,28.2,28l-.38.34c-.12.13-.24.24-.35.37s-.23.26-.33.4l-.31.42a10.49,10.49,0,0,0-1,1.91,13.74,13.74,0,0,0-.62,2.13,10.36,10.36,0,0,0-.2,2.22v.28c0,.1,0,.19,0,.28v.28s0,.09,0,.13v.12c0,.17,0,.33.07.49s.06.33.1.48a4.27,4.27,0,0,0,.13.48,4.34,4.34,0,0,0,.16.47,4.47,4.47,0,0,0,.19.46l.1.23.12.22a11.94,11.94,0,0,0,1.17,1.76,20.76,20.76,0,0,0,1.49,1.67l.4.42.21.2.19.18a1.62,1.62,0,0,0,.19.18l.2.17c.13.12.26.22.4.33a10.3,10.3,0,0,0,1.71,1.09,9.6,9.6,0,0,0,1.93.68,11.07,11.07,0,0,0,2.11.28h1.13l.57,0,.55,0a12.26,12.26,0,0,0,2.14-.35,7.78,7.78,0,0,0,3.56-1.92,10.46,10.46,0,0,0,2.4-3.51,11.2,11.2,0,0,0,.84-4.23,10,10,0,0,0-.88-4.21,10.39,10.39,0,0,0-1.08-1.85c-.21-.29-.44-.57-.68-.84s-.24-.27-.37-.4-.25-.25-.4-.38a16.15,16.15,0,0,0-3.57-2.64,10.87,10.87,0,0,0-1.94-.77A7.94,7.94,0,0,0,36.24,25.24Z" transform="translate(-14.83 -15.25)"></path>
+    <path d="M35.47,20.55c-1,0-1.48-.82-1.64-1.7-.22-1.25-.46-3.52,1.38-3.6a1.58,1.58,0,0,1,1.33.64c.41.55.26,1.16.31,1.8s.34,1.26.07,1.89a1.58,1.58,0,0,1-1.38,1Z" transform="translate(-14.83 -15.25)"></path>
+    <path d="M53.44,37.81a1.57,1.57,0,0,1-1.57-1.5c-.08-1.7,2.06-1.88,3.3-1.86a3,3,0,0,1,.95.13,1.56,1.56,0,0,1-.2,3,8.6,8.6,0,0,1-1.24,0c-.41,0-.77.17-1.17.19Zm1.08-.2Zm-1.1-3Z" transform="translate(-14.83 -15.25)"></path>
+    <path d="M18.37,38.41a4.49,4.49,0,0,1-.51,0c-1.18,0-3,.05-3-1.54a1.57,1.57,0,0,1,1.5-1.64c.31,0,.48,0,.63,0h.46a4,4,0,0,1,.75,0,1.8,1.8,0,0,0,.33,0,1.58,1.58,0,0,1,1.64,1.5C20.19,37.89,19.3,38.29,18.37,38.41Z" transform="translate(-14.83 -15.25)"></path>
+    <path d="M36.22,56.75a1.57,1.57,0,0,1-1.5-1.12,5.56,5.56,0,0,1-.08-.81c0-.75-.39-1.62-.12-2.34a1.58,1.58,0,0,1,1.4-1c1.3-.05,1.72,1.26,1.84,2.33s.13,2.9-1.47,3Z" transform="translate(-14.83 -15.25)"></path>
+    <path d="M47.21,25.19a1.57,1.57,0,0,1-1.09-2.7l.42-.4.36-.35a6.87,6.87,0,0,1,.59-.49,1.84,1.84,0,0,0,.25-.21,1.57,1.57,0,0,1,2.18,2.26,3.89,3.89,0,0,1-.58.49l-.25.21-.41.39-.37.35A1.57,1.57,0,0,1,47.21,25.19Z" transform="translate(-14.83 -15.25)"></path>
+    <path d="M22.6,26.24a3.22,3.22,0,0,1-1.74-.74c-.92-.71-2.15-1.93-1.2-3.12a1.59,1.59,0,0,1,1.53-.56c.65.13.92.63,1.39,1s1.08.5,1.4,1.09a1.58,1.58,0,0,1-.15,1.74A1.44,1.44,0,0,1,22.6,26.24Zm.08-3.3Z" transform="translate(-14.83 -15.25)"></path>
+    <path d="M51.18,50.57c-1.77,0-4.11-2.38-2.94-3.84a1.6,1.6,0,0,1,1.59-.55c.63.15.93.7,1.42,1,.23.17.5.27.74.43A1.62,1.62,0,0,1,52.41,50,1.5,1.5,0,0,1,51.18,50.57Zm.09-3.29Z" transform="translate(-14.83 -15.25)"></path>
+    <path d="M22.28,51.09a1.43,1.43,0,0,1-1.13-.47c-1-1-.13-2.06.73-2.81s2-2,3.16-.8c.8.83.37,1.83-.32,2.54A4.5,4.5,0,0,1,22.28,51.09Zm1.13-.47Z" transform="translate(-14.83 -15.25)"></path>
+  </symbol>
+  <symbol id="linkedin_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35">
+    <path d="M18.36,13.83a1.53,1.53,0,0,0-1.57,1.52,1.57,1.57,0,1,0,1.57-1.52Z" transform="translate(-7.3 -7.3)"></path>
+    <rect x="9.9" y="12.01" width="2.32" height="12.8"></rect>
+    <path d="M30.77,19.19a5.47,5.47,0,0,0-4.61,2.06V19.32H23.94V32.11h2.31V25.52c0-2.78,1.6-4.25,4.06-4.25,2.2,0,3.45,1.23,3.45,3.74v7.1h2.32V24.75C36.08,21,33.88,19.19,30.77,19.19Z" transform="translate(-7.3 -7.3)"></path>
+    <path d="M37.54,7.3H14a5.12,5.12,0,0,0-4.56,2.81A2.38,2.38,0,0,0,7.3,12.47V36a6.76,6.76,0,0,0,6.75,6.75h23.5a2.37,2.37,0,0,0,2.35-2.18A5.15,5.15,0,0,0,42.7,36V12.46A5.17,5.17,0,0,0,37.54,7.3ZM41.11,36a3.56,3.56,0,0,1-1.63,3,2.37,2.37,0,0,0-1.93-1H14.05a2,2,0,0,1-2-2V12.47a2.37,2.37,0,0,0-1-1.94,3.56,3.56,0,0,1,3-1.64h23.5a3.57,3.57,0,0,1,3.57,3.57Z" transform="translate(-7.3 -7.3)"></path>
+  </symbol>
+  <symbol id="resume_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35">
+    <path d="M41.84,14.23,35.79,8.16a2.89,2.89,0,0,0-2.06-.85H14.05a5.15,5.15,0,0,0-4.57,2.8,2.37,2.37,0,0,0-2.17,2.36V36a6.74,6.74,0,0,0,6.74,6.74h23.5a2.36,2.36,0,0,0,2.35-2.18A5.11,5.11,0,0,0,42.69,36V16.28A2.88,2.88,0,0,0,41.84,14.23Zm-1.31.93H34.26V9a1.22,1.22,0,0,1,.41.27ZM39.48,39a2.35,2.35,0,0,0-1.93-1H14.05a2,2,0,0,1-2-2V12.47a2.36,2.36,0,0,0-1-1.94,3.58,3.58,0,0,1,3-1.64H32.68V16a.79.79,0,0,0,.79.79h7.64V36A3.55,3.55,0,0,1,39.48,39Z" transform="translate(-7.31 -7.31)"></path>
+    <path d="M35.08,23.1H15.52a.79.79,0,1,0,0,1.58H35.08a.79.79,0,0,0,0-1.58Z" transform="translate(-7.31 -7.31)"></path>
+    <path d="M15.52,19.56h7.26a.8.8,0,1,0,0-1.59H15.52a.8.8,0,0,0,0,1.59Z" transform="translate(-7.31 -7.31)"></path>
+    <path d="M35.08,28.42H15.52a.79.79,0,0,0,0,1.58H35.08a.79.79,0,0,0,0-1.58Z" transform="translate(-7.31 -7.31)"></path>
+    <path d="M35.08,33.74H15.52a.79.79,0,1,0,0,1.58H35.08a.79.79,0,0,0,0-1.58Z" transform="translate(-7.31 -7.31)"></path>
+  </symbol>
+</svg>
+	
+
+<!--
+<svg xmlns="http://www.w3.org/2000/svg"  style="display:none;">	
+	<symbol id="circle" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 33.44 33.44">
+    <path d="M25,41.72A16.72,16.72,0,1,1,41.72,25,16.74,16.74,0,0,1,25,41.72Zm0-28.44A11.72,11.72,0,1,0,36.72,25,11.74,11.74,0,0,0,25,13.28Z" transform="translate(-8.28 -8.28)"></path>
+  </symbol>
+  <symbol id="square" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.36 32.36">
+    <path d="M41.18,41.18H8.82V8.82H41.18Zm-27.36-5H36.18V13.82H13.82Z" transform="translate(-8.82 -8.82)"></path>
+  </symbol>
+</svg>
+-->
+	
+	
+	
+	
+	
+	
+</head>
+
+<body>
+	<div id="scroll_container">
+		<div id="top"></div>
+		<header class="bkgd_tertiary">
+			<div class="content_wrapper flex nav">
+				<svg class="nav_logo">
+						<use href="#kevrog_logo"></use>
+					</svg>
+				<h2 class="nav_name">KEVIN ROGERS</h2>
+				<ul id="nav_links">
+					<li><a class="nav_item" href="#top">home</a></li>
+					<li><a class="nav_item" href="#project_section">projects</a></li>
+					<li><a class="nav_item" href="#about_section">about me</a></li>
+				</ul>
+				<div class="hamburger_div">
+					<div class="hamburger_lines"></div>
+				</div>
+			</div>
+		</header>
+		<div class="mobile_nav">
+			<ul>
+				<a class="border_top m_nav_item" href="#top"><li><p>home</p><i class="nav_arrow right"></i></li></a>
+				<a class="m_nav_item" href="#project_section"><li><p>projects</p><i class="nav_arrow right"></i></li></a>
+				<a class="m_nav_item" href="#about_section"><li><p>about me</p><i class="nav_arrow right"></i></li></a>
+				<a class="m_nav_item" href="#"><li><p>resume</p><i class="nav_arrow right"></i></li></a>
+				<a class="m_nav_item" href="https://www.linkedin.com/in/hirekevinrogers/" target="_blank"><li><p>linkedIn</p><i class="nav_arrow right"></i></li></a>
+				<a class="m_nav_item" href="#"><li><p>dribbble</p><i class="nav_arrow right"></i></li></a>
+				<a class="m_nav_item" href="#"><li><p>contact</p><i class="nav_arrow right"></i></li></a>
+			</ul>
+		</div>
+
+		<section id="above_fold">
+			<div class="content_wrapper flex">
+				<div class="intro_content" id="intro_grid">
+						<div class="intro_text">
+							<h1>Graphic Designer <div class="amp_wrap"><div class="amp">&amp;<div class="amp2">&amp;</div></div></div> &nbsp;<br> Web Developer</h1>
+							<p>based in Phoenix, AZ</p>
+						</div>
+						<div class="logo_animation">
+							<img class="icon_img" src="media/cacti_dude_yellow_sky.svg" alt="resume icon"/>
+						</div>
+						<div class="icon_container">
+							<div class="icon_list_right">
+								<a href="https://www.linkedin.com/in/hirekevinrogers/" target="_blank">
+									<svg class="svg_icon_main">
+										<use href="#resume_icon"></use>
+									</svg>
+									<div class="label_wrap"><p class="icon_label">resume</p></div>
+								</a>
+								<a href="https://www.linkedin.com/in/hirekevinrogers/" target="_blank">
+									<svg class="svg_icon_main">
+										<use href="#linkedin_icon"></use>
+									</svg>
+									<div class="label_wrap"><p class="icon_label">LinkedIn</p></div>
+								</a>
+								<a href="#" target="_blank">
+									<svg class="svg_icon_main">
+										<use href="#dribbble_icon"></use>
+									</svg><div class="label_wrap"><p class="icon_label">dribbble</p></div></a>
+								<a href="#" target="_blank">
+									<svg class="svg_icon_main">
+										<use href="#email_icon"></use>
+									</svg><div class="label_wrap"><p class="icon_label">email</p></div></a>
+							</div>
+						</div>
+						<div class="column_left">
+							<div class="vertical_line"></div>
+							<div class="icon_list_left">
+								<a href="https://www.linkedin.com/in/hirekevinrogers/" target="_blank">
+									<svg class="svg_icon_main">
+										<use href="#resume_icon"></use>
+									</svg>
+								</a>
+								<a href="https://www.linkedin.com/in/hirekevinrogers/" target="_blank">
+									<svg class="svg_icon_main">
+										<use href="#linkedin_icon"></use>
+									</svg>
+								</a>
+								<a href="#" target="_blank">
+									<svg class="svg_icon_main">
+										<use href="#dribbble_icon"></use>
+									</svg></a>
+								<a href="#" target="_blank">
+									<svg class="svg_icon_main">
+										<use href="#email_icon"></use>
+									</svg></a>
+							</div>
+							<a class="vert_proj" href="#project_section"><p  class="vertical_text">PROJECTS</p></a>
+							<img class="downward_arrows" src="media/arrows_down_orange.svg" alt="a group of arrows pointing dowm"/>
+							<img class="downward_arrows2" src="media/arrows_down_orange.svg" alt="a group of arrows pointing dowm"/>
+						</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="project_section"  class="bkgd_secondary" >
+			<div class="section_header bkgd_secondary">
+				<div class="content_wrapper">
+					<p class="section_title">PROJECTS</p>
+				</div>
+			</div>
+			<div class="projects_wrapper bkgd_secondary flex">
+				<div class="carousel_wrapper">
+					<div class="carousel_arrow_left" aria-label="Previous Slide"><div class="carousel_arrow large_arrow left"><div class="carousel_arrow small_arrow"></div></div></div>
+					
+
+	<!--
+						<a href="pages/poster.html" class="project_link">
+							<div class="project_card active_card">
+								<div class="project_image_wrapper">
+									<div class="project_image project_1"></div>
+								</div>
+								<div class="project_card_text flex">
+									<p class="project_desc"><span class="project_name">Flying Nickel</span> Jan, 2022</p>
+									<p class="more_info">more info &gt;</p>
+								</div>
+							</div>
+						</a>
+
+						<a href="pages/chewybrew.html" class="project_link">
+							<div class="project_card">
+								<div class="project_image_wrapper">
+									<div class="project_image project_2"></div>
+								</div>
+								<div class="project_card_text flex">
+									<p class="project_desc"><span class="project_name">Chewy Brew Co.</span> Nov, 2021</p>
+									<p class="more_info">more info &gt;</p>
+								</div>
+							</div>
+						</a>
+
+						<div class="project_card">
+							<div class="project_image_wrapper">
+								<div class="project_image project_3"></div>
+							</div>
+							<div class="project_card_text flex">
+								<p class="project_desc"><span class="project_name">Concert Poster</span>March, 2020</p>
+								<p class="more_info">more info &gt;</p>
+							</div>
+						</div>
+
+						<div class="project_card ">
+							<div class="project_image_wrapper">
+								<div class="project_image project_4"></div>
+							</div>
+							<div class="project_card_text flex">
+								<p class="project_desc"><span class="project_name">Cake Pop Planet</span> logo/branding</p>
+								<p class="more_info">more info &gt;</p>
+							</div>
+						</div>
+
+						<div class="project_card ">
+							<div class="project_image_wrapper">
+								<div class="project_image project_5"></div>
+							</div>
+							<div class="project_card_text flex">
+								<p class="project_desc"><span class="project_name">To-Do App</span> logo/branding</p>
+								<p class="more_info">more info &gt;</p>
+							</div>
+						</div>
+	-->
+
+					<div class="project_card_wrapper">
+<!--						add scroll on the x axis with mandatory scroll snap behavior
+also add a last child element innerHTML to beggining of carousel
+-->
+						<a href="pages/poster.html" class="project_card active_card">
+							<div class="project_image_wrapper">
+								<div class="project_image project_1"></div>
+							</div>
+							<div class="project_card_text flex">
+								<p class="project_desc"><span class="project_name">Flying Nickel</span> Jan, 2022</p>
+								<p class="more_info">more info &gt;</p>
+							</div>
+						</a>
+
+						<a href="pages/chewybrew.html" class="project_card inactive_card">
+							<div class="project_image_wrapper">
+								<div class="project_image project_2"></div>
+							</div>
+							<div class="project_card_text flex">
+								<p class="project_desc"><span class="project_name">Chewy Brew Co.</span> Nov, 2021</p>
+								<p class="more_info">more info &gt;</p>
+							</div>
+						</a>
+
+						<a href="#?3" class="project_card inactive_card">
+							<div class="project_image_wrapper">
+								<div class="project_image project_3"></div>
+							</div>
+							<div class="project_card_text flex">
+								<p class="project_desc"><span class="project_name">Concert Poster</span>March, 2020</p>
+								<p class="more_info">more info &gt;</p>
+							</div>
+						</a>
+
+						<a href="#?4" class="project_card inactive_card">
+							<div class="project_image_wrapper">
+								<div class="project_image project_4"></div>
+							</div>
+							<div class="project_card_text flex">
+								<p class="project_desc"><span class="project_name">Cake Pop Planet</span> logo/branding</p>
+								<p class="more_info">more info &gt;</p>
+							</div>
+						</a>
+
+						<a href="#?5" class="project_card inactive_card">
+							<div class="project_image_wrapper">
+								<div class="project_image project_5"></div>
+							</div>
+							<div class="project_card_text flex">
+								<p class="project_desc"><span class="project_name">To-Do App</span> logo/branding</p>
+								<p class="more_info">more info &gt;</p>
+							</div>
+						</a>
+
+					</div>
+					<div class="carousel_arrow_right" aria-label="Next Slide"><div class="carousel_arrow large_arrow right"><div class="carousel_arrow small_arrow"></div></div></div>
+					<div class="carousel_indicator_wrapper">
+						<div class="indicator active_dot"></div>
+						<div class="indicator"></div>
+						<div class="indicator"></div>
+						<div class="indicator"></div>
+						<div class="indicator"></div>
+					</div>
+			  </div>
+			</div>
+		</section>
+		<section id="about_section">
+			<div class="section_header bkgd_primary">
+				<div class="content_wrapper">
+					<p class="section_title">ABOUT ME</p>
+				</div>
+			</div>
+			<div class="about_wrapper content_wrapper">
+				<div class="about_text_image_wrapper">
+					<div class="about_img_container">
+
+					</div>
+					<div class="about_text_wrapper flex">
+						<div class="about_text">
+							<h3>Who is Kevin?</h3>
+							<h4>the man behind the mustache</h4>
+							<p>I am a designer and web developer, but more importantly, I'm someone who loves creating unique pieces that showcase the personality of a brand. Each project is a new puzzle and an opportunity to make a lasting impression. Whether it’s with a cute little cactus dude, or just a clean interface, there’s always something new to explore. That's what keeps me excited to take on the next project!</p>
+							<p>When I’m not designing or working on websites, I enjoy spending my time playing baseball, running, golfing, playing fantasy football, knitting, board gaming, and exploring new places around Phoenix.</p>
+						</div>
+					</div>
+				</div>
+				<div class="achievement_box">
+					<p class="ach_title">Achievements</p>
+					<div class="achievements_wrapper">
+						<div class="achievement">
+							<div class="img_box"><img class="ach_img cert" src="media/web_dev_cert_icon.svg" alt=""/></div>
+							<p>Frontend web developer certificate</p>
+						</div>
+						<div class="achievement">
+							<div class="img_box"><img class="ach_img" src="media/AA_icon.svg" alt=""/></div>
+							<p>Associate degree in graphic design</p>
+						</div>
+						<div class="achievement">
+							<div class="img_box"><img class="ach_img" src="media/BS_icon.svg" alt=""/></div>
+							<p>Bachelor’s degree in Marketing</p>
+						</div> 
+						<div class="achievement">
+							<div class="img_box"><img class="ach_img cert" src="media/UX_cert_icon.svg" alt=""/></div>
+							<p>Google UX design certificate (in progress)</p>
+						</div>
+	<!--
+						<div class="achievement">
+							<div class="img_box"><img class="ach_img" src="media/kevrog_logo_black.svg" alt=""/></div>
+							<p>Over 5 years marketing experience</p>
+						</div>
+	-->
+					</div>
+				</div>
+			</div>  
+
+		</section>
+
+		<footer class="bkgd_tertiary">
+			<div class="footer_content content_wrapper">
+				<div class="footer_socials flex">
+					<a href="#" ><svg class="svg_icon_footer">
+						<use href="#resume_icon"></use>
+					</svg></a>
+					<a href="#" ><svg class="svg_icon_footer">
+						<use href="#linkedin_icon"></use>
+					</svg></a>
+					<a href="#" ><svg class="svg_icon_footer">
+						<use href="#dribbble_icon"></use>
+					</svg></a>
+					<a href="#" ><svg class="svg_icon_footer">
+						<use href="#email_icon"></use>
+					</svg></a>
+
+				</div>
+				<div class="logo">
+					<a href="#top" ><svg class="logo_footer">
+						<use href="#kevrog_logo"></use>
+					</svg></a>
+				</div>
+				<div class="copyright">
+					<div>
+						<p>&copy; <span class="current_year"></span> Kevin Rogers</p>
+					</div>
+					<div>
+						<p>contact me</p>
+					</div>
+				</div>
+			</div> 
+		</footer>
+	</div>
+	<script src="script/script.js?4"></script>
+	<script src="script/carousel_function.js?3"></script>
+</body>
+</html>
