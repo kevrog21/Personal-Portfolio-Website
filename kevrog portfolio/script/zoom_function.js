@@ -32,31 +32,6 @@ projectImg.forEach(img => {
 })
 
 
-const allInsightCards = document.querySelectorAll(".project_insight")
-
-const options = {
-	threshold: .35, //how much of the section should be in root before triggering
-} // root: null is the viewport & is the default
-
-
-const observer = new IntersectionObserver(function(entries, observer) {
-	entries.forEach(entry => {
-		if (entry.isIntersecting) {
-			entry.target.classList.add("in_view_shift_insight")
-//			console.log("activating animation")
-		} else {
-			
-//			console.log("deactivating animation")
-		}
-		
-	})
-}, options)
-
-allInsightCards.forEach(card => {
-	observer.observe(card)
-})
-
-
 
 
 
