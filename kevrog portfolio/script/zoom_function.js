@@ -4,6 +4,7 @@
 
 //project image zoom
 
+const bodyEl = document.querySelector("body")
 const projectImg = document.querySelectorAll(".project_img")
 
 projectImg.forEach(img => {
@@ -11,22 +12,33 @@ projectImg.forEach(img => {
 		const selectedImgHeight = img.clientHeight
 		img.classList.toggle("zoom_active")
 		// check if zoom is active or inactive
-		if (img.classList.value.includes("zoom_active")) {
-			// add padding to top or bottom to prevent other elements shifting
-//			console.log("zoom actived")
-			if (img.nextElementSibling) {
-				img.nextElementSibling.style.marginTop = `${selectedImgHeight}px`
-			} else {img.previousElementSibling.style.marginBottom = `${selectedImgHeight}px`
-				}
-//			projectContent.style.paddingTop = `${selectedImgHeight}px`
-		} else {
-			// remove project content padding
-//			console.log("zoom deactived")
+		if (!img.classList.value.includes("zoom_active")) {
+			bodyEl.classList.remove("noscroll")
+			
 			if (img.nextElementSibling) {
 				img.nextElementSibling.style.marginTop = "0"
-			} else {img.previousElementSibling.style.marginBottom = "0"
-				
+			} else {
+				img.previousElementSibling.style.marginBottom = "0"
 			}
+			
+			// add padding to top or bottom to prevent other elements shifting
+//			console.log("zoom actived")
+//			if (img.nextElementSibling) {
+//				img.nextElementSibling.style.marginTop = `${selectedImgHeight}px`
+//			} else {img.previousElementSibling.style.marginBottom = `${selectedImgHeight}px`
+//				}
+//			projectContent.style.paddingTop = `${selectedImgHeight}px`
+//		} else {
+//			// remove project content padding
+////			console.log("zoom deactived")
+//			if (img.nextElementSibling) {
+//				img.nextElementSibling.style.marginTop = "0"
+//			} else {img.previousElementSibling.style.marginBottom = "0"
+//				
+//			}
+		} else {
+			bodyEl.classList.add("noscroll")
+			
 		}
 	})
 })
