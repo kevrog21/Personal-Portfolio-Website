@@ -3,7 +3,6 @@
 
 
 //project image zoom
-
 const bodyEl = document.querySelector("body")
 const projectImg = document.querySelectorAll(".project_img")
 
