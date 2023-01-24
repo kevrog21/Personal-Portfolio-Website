@@ -51,11 +51,11 @@ currentYearEl.textContent = new Date().getFullYear();
 
 
 
-//intersection observer
+//intersection observer for nav underline
 const allSections = document.querySelectorAll("section")
 const mobileNavList = document.querySelectorAll(".m_nav_item")
 const abvFoldArrows = document.querySelector(".downward_arrows2")
-console.log(mobileNavList)
+//console.log(mobileNavList)
 
 const topOptions = {
 	threshold: .45,
@@ -90,6 +90,88 @@ const topObserver = new IntersectionObserver (function(entries, topObserver) {
 allSections.forEach(section => {
 	topObserver.observe(section)
 })
+
+//intersection observer for section header style change on scroll
+const allSectionHeaders = document.querySelectorAll(".section_header")
+const viewportWidth = window.innerWidth
+//determine where the intersection observer should start based on nav/viewport height
+let headerOptions = ''
+if (viewportWidth > 600) {
+	headerOptions = { rootMargin: '100% 0px -91% 0px',}
+} else {
+	headerOptions = { rootMargin: '100% 0px -92.5% 0px',}
+}
+
+const sectionObserver = new IntersectionObserver (function(entries, sectionObserver) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add("active_section")
+		} else {
+			entry.target.classList.remove("active_section")
+		}
+	})
+}, headerOptions)
+
+allSectionHeaders.forEach(secHeader => {
+	sectionObserver.observe(secHeader)
+})
+
+
+
+//const sectionObserver = new IntersectionObserver (function(entries, sectionObserver) {
+//	if (!entries[0].isIntersecting) {
+//		allSectionHeaders[0].classList.add("active_section")
+//	} else if (!entries[1].isIntersecting) {
+//		
+//	}
+//}, headerOptions)
+//
+//allSections.forEach(section => {
+//	sectionObserver.observe(section)
+//})
+	
+	
+//	entries.forEach(entry => {
+//		if (!entry.isIntersecting) {
+//			console.log(entry)
+//		}
+//	})
+//}, headerOptions)
+//
+//allSections.forEach(section => {
+//	sectionObserver.observe(section)
+//})
+
+
+//intersection observer for project text shift on scroll into view
+const allInsightCards = document.querySelectorAll(".project_insight")
+
+const options = {
+	threshold: .35, //how much of the section should be in root before triggering
+} // root: null is the viewport & is the default
+
+
+const observer = new IntersectionObserver(function(entries, observer) {
+	entries.forEach(entry => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add("in_view_shift_insight")
+//			console.log("activating animation")
+		} else {
+			
+//			console.log("deactivating animation")
+		}
+		
+	})
+}, options)
+
+allInsightCards.forEach(card => {
+	observer.observe(card)
+})
+
+
+
+
+
 
 
 
