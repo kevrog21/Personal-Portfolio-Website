@@ -1058,6 +1058,20 @@ footer {
 		width: 100%;
 		border-top: 2px solid #000000;
 		margin: auto auto 0 0;
+
+	}
+*/
+	
+
+/*
+	.header_margin::after {
+		display: inline-block;
+		content: '';
+		background: orange;
+		height: 100%;
+		width: 100%;
+		border-top: 2px solid #000000;
+		margin: auto auto 0 0;
 	}
 */
 	
@@ -1842,7 +1856,6 @@ footer {
 	.zoom_active img {
 		top: 7vh;
 	}
-	
 	.back_button {
 		transform: translateX(calc(-15vw - 4.75em));
 		margin-left: 7.5vw;
@@ -1892,8 +1905,7 @@ footer {
 		transition: all ease .25s;
 */
 	}
-	
-	
+
 	.project_heading {
 		position: absolute;
 		background: #E8D9C4;
@@ -1936,6 +1948,7 @@ footer {
 	
 	.medium_img {
 		width: 25%;
+
 	}
 	
 	.img_right {
@@ -1955,7 +1968,6 @@ footer {
 	.insight_right.project_insight * {
 		margin: 0 0 0 auto;
 	}
-	
 	.insight_title {
 		border-bottom: none;
 		border-top: 2px solid #000000;
@@ -1986,6 +1998,23 @@ footer {
 	.more_work_title {
 		width: 50%;
 		margin: .5em auto;
+
+	}
+	
+	.more_work_left:hover p,
+	.more_work_right:hover p {
+		color: #000;
+		transition: all ease .75s;
+	}
+	
+	.more_work_left p,
+	.more_work_right p {
+		font-size: 3rem;
+		line-height: 3rem;
+		-webkit-text-stroke: 2px #000;
+		text-stroke: 2px #000;
+		letter-spacing: 2px;
+
 	}
 	
 	.more_work_left:hover p,
