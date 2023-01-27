@@ -4,14 +4,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- Need this for responsive! specifies that IE should run in the highest mode available to that version of IE as opposed to a compatability mode; IE8 can support up to IE8 modes, IE9 can support up to IE9 modes, and so on. -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="a website showcasing the graphic design creations of Kevin Rogers, a graphic design student at Las Positas College in Livermore, California.">
+<meta name="description" content="An in depth overview of Kevin Roger's poster design for Las Positas College's Jazz Orchastra Concert">
 <meta name="Keywords" content="portfolio, graphic design, kevin rogers, Phoenix graphic designer, Las Positas College">
-<title>Kevin's Portfolio</title>
-<link rel="shortcut icon" type="image/svg" href="media/kevrog_logo_black.svg">
+<title>Flying Nickel Design</title>
+<link rel="shortcut icon" type="image/svg" href="../media/kevrog_logo_black.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
-<link href="styles.css" rel="stylesheet" type="text/css">
+<link href="../styles.css" rel="stylesheet" type="text/css">
 	
 
 <!--Scalable Vector Graphic-->
@@ -71,17 +71,16 @@
 
 <body>
 	<div id="scroll_container">
-		<div id="top"></div>
 		<header class="bkgd_tertiary">
 			<div class="content_wrapper flex nav">
-				<svg class="nav_logo">
+					<a href="../index.html"><svg class="nav_logo">
 						<use href="#kevrog_logo"></use>
-					</svg>
+					</svg></a>
 				<h2 class="nav_name">KEVIN ROGERS</h2>
 				<ul id="nav_links">
-					<li><a class="nav_item" href="#top">home</a></li>
-					<li><a class="nav_item" href="#project_section">projects</a></li>
-					<li><a class="nav_item" href="#about_section">about me</a></li>
+					<li><a class="nav_item" href="../index.html">home</a></li>
+					<li><a class="nav_item active" href="../index.html#project_section">projects</a></li>
+					<li><a class="nav_item" href="../index.html#about_section">about me</a></li>
 				</ul>
 				<div class="hamburger_div">
 					<div class="hamburger_lines"></div>
@@ -90,9 +89,9 @@
 		</header>
 		<div class="mobile_nav">
 			<ul>
-				<a class="border_top m_nav_item" href="#top"><li><p>home</p><i class="nav_arrow right"></i></li></a>
-				<a class="m_nav_item" href="#project_section"><li><p>projects</p><i class="nav_arrow right"></i></li></a>
-				<a class="m_nav_item" href="#about_section"><li><p>about me</p><i class="nav_arrow right"></i></li></a>
+				<a class="border_top m_nav_item" href="../index.html"><li><p>home</p><i class="nav_arrow right"></i></li></a>
+				<a class="m_nav_item" href="../index.html#project_section"><li class="active"><p>projects</p><i class="nav_arrow right"></i></li></a>
+				<a class="m_nav_item" href="../index.html#about_section"><li><p>about me</p><i class="nav_arrow right"></i></li></a>
 				<a class="m_nav_item" href="#"><li><p>resume</p><i class="nav_arrow right"></i></li></a>
 				<a class="m_nav_item" href="https://www.linkedin.com/in/hirekevinrogers/" target="_blank"><li><p>linkedIn</p><i class="nav_arrow right"></i></li></a>
 				<a class="m_nav_item" href="#"><li><p>dribbble</p><i class="nav_arrow right"></i></li></a>
@@ -100,283 +99,146 @@
 			</ul>
 		</div>
 
-		<section id="above_fold">
-			<div class="content_wrapper flex">
-				<div class="intro_content" id="intro_grid">
-						<div class="intro_text">
-							<h1>Graphic Designer <div class="amp_wrap"><div class="amp">&amp;<div class="amp2">&amp;</div></div></div> &nbsp;<br> Web Developer</h1>
-							<p>based in Phoenix, AZ</p>
-						</div>
-						<div class="logo_animation">
-							<img class="icon_img" src="media/cacti_dude_yellow_sky.svg" alt="resume icon"/>
-						</div>
-						<div class="icon_container">
-							<div class="icon_list_right">
-								<a href="https://www.linkedin.com/in/hirekevinrogers/" target="_blank">
-									<svg class="svg_icon_main">
-										<use href="#resume_icon"></use>
-									</svg>
-									<div class="label_wrap"><p class="icon_label">resume</p></div>
-								</a>
-								<a href="https://www.linkedin.com/in/hirekevinrogers/" target="_blank">
-									<svg class="svg_icon_main">
-										<use href="#linkedin_icon"></use>
-									</svg>
-									<div class="label_wrap"><p class="icon_label">LinkedIn</p></div>
-								</a>
-								<a href="#" target="_blank">
-									<svg class="svg_icon_main">
-										<use href="#dribbble_icon"></use>
-									</svg><div class="label_wrap"><p class="icon_label">dribbble</p></div></a>
-								<a href="#" target="_blank">
-									<svg class="svg_icon_main">
-										<use href="#email_icon"></use>
-									</svg><div class="label_wrap"><p class="icon_label">email</p></div></a>
+		<main>
+			<div class="above_fold_wrapper">
+				<div class="project_wrapper flex">
+					<div class="overview_content" id="project_grid">
+
+						<div class="project_body">
+							<div class="back_button">
+								<a href="javascript:history.back()"><img src="../media/back_arrow.svg" alt="back arrow"/></a>
 							</div>
-						</div>
-						<div class="column_left">
-							<div class="vertical_line"></div>
-							<div class="icon_list_left">
-								<a href="https://www.linkedin.com/in/hirekevinrogers/" target="_blank">
-									<svg class="svg_icon_main">
-										<use href="#resume_icon"></use>
-									</svg>
-								</a>
-								<a href="https://www.linkedin.com/in/hirekevinrogers/" target="_blank">
-									<svg class="svg_icon_main">
-										<use href="#linkedin_icon"></use>
-									</svg>
-								</a>
-								<a href="#" target="_blank">
-									<svg class="svg_icon_main">
-										<use href="#dribbble_icon"></use>
-									</svg></a>
-								<a href="#" target="_blank">
-									<svg class="svg_icon_main">
-										<use href="#email_icon"></use>
-									</svg></a>
+							<div class="project_heading">
+								<p>Flying <br>Nickel</p>
 							</div>
-							<a class="vert_proj" href="#project_section"><p  class="vertical_text">PROJECTS</p></a>
-							<img class="downward_arrows" src="media/arrows_down_orange.svg" alt="a group of arrows pointing dowm"/>
-							<img class="downward_arrows2" src="media/arrows_down_orange.svg" alt="a group of arrows pointing dowm"/>
-						</div>
-				</div>
-			</div>
-		</section>
-		
-		<section id="project_section"  class="bkgd_secondary" >
-			<div class="section_header bkgd_secondary content_wrapper">
-				<div class="header_margin">
-					<p class="section_title">PROJECTS</p>
-				</div>
-			</div>
-			<div class="projects_wrapper content_wrapper bkgd_secondary flex">
-				<div class="project_col_wrapper">
-					<div class="proj_col_one">
-						<p class="proj_type">Graphic Design</p>
-						<div class="project_card_wrapper">
-							<div class="card">
-								<a href="pages/poster.html">
-									<div class="img_container">
-										<img class="proj_img" src="media/jazz_poster_mockup_red.jpg" alt="jazz orchestra poster" loading="lazy">
+							<div class="project_content">
+								<div class="feature_overview_container">
+									<div  class="project_img feature_img">
+										<img src="../media/Flying_Nickel_hero.jpg" alt="A tatooed arm holding a purple beer can in front of a pink background."/>
 									</div>
-								</a>
-								<div class="proj_title">
-									<a class="proj_title" href="pages/poster.html"><p>Concert Poster</p></a>
-								</div>
-							</div>
-							<div class="card">
-								<a href="pages/chewybrew.html">
-									<div class="img_container">
-										<img class="proj_img" src="media/tatooed_can_mockup_purp.jpg" alt="Chewy Brew Co." loading="lazy">
+									<div class="project_overview">
+										<div class="overview_title">
+										Overview
+										</div>
+										<p>Flying Nickel is a fictitious company that was created for a design competition that I participated in. The fake company’s product was an app that tracks appointments using blockchain technology. My task was to create a logo that would be used on everything from smart watches to the side of vehicles. The brief requested the use of pink and purple in the design and stated that they wanted to “convey a sense of wonder, while being modern”.  This project turned out to be great practice in logo design and creating mockups as if it were a real client.</p>
 									</div>
-								</a>
-								<div class="proj_title">
-									<a class="proj_title" href="pages/chewybrew.html"><p>Chewy Brew Co.</p></a>
 								</div>
-							</div>
-							<div class="card">
-								<a href="pages/flying_nickel.html">
-									<div class="img_container">
-										<img class="proj_img" src="media/Flying_Nickel_hero.jpg" alt="jazz orchestra poster" loading="lazy">
+								<div class="project_img insight_img img_left">
+									<img src="../media/FN_circuit_logo.jpg" alt="An isolated vector image of the Chewy Brew Co. logo - graffiti style letters with colorful outlines in front of the Flatiron Mountains (the mountains of Boulder, CO)."/>
+								</div>
+
+								<div class="project_insight insight_right">
+									<div class="insight_title">
+									1
 									</div>
-								</a>
-								<div class="proj_title">
-									<a class="proj_title" href="pages/flying_nickel.html"><p>Flying Nickel</p></a>
+									<p>The final design combined the outline of the letter F with a calendar icon. The brief emphasized the use of technology and blockchain, so I was sure to include those themes in the logo presentation.</p>
 								</div>
-							</div>
-						</div>
-					</div>
-					<div class="proj_col_two">
-						<p class="proj_type">Web Development</p>
-						<div class="project_card_wrapper">
-							<div class="card">
-								<a href="pages/poster.html">
-									<div class="img_container">
-										<img class="proj_img" src="media/to-do_mockup_purple.jpg" alt="jazz orchestra poster" loading="lazy">
+
+								<div class="project_img insight_img img_right">
+									<img src="../media/FN_logo_breakdown.jpg" alt="an isolated vector image of the poster"/>
+								</div>
+
+								<div class="project_insight">
+									<div class="insight_title">
+									2
 									</div>
-								</a>
-								<div class="proj_title">
-									<a class="proj_title" href="pages/poster.html"><p>Daily Checklist</p></a>
+									<p>The design I made combined the outline of the letter F with a calendar icon. The brief emphasized the use of technology and block chain, so I was sure to include those themes in the presentation.</p>
 								</div>
-							</div>
-							<div class="card">
-								<a href="pages/poster.html">
-									<div class="img_container">
-										<img class="proj_img" src="media/tatooed_can_mockup_purp.jpg" alt="jazz orchestra poster" loading="lazy">
+
+								<div class="project_img insight_img img_left">
+									<img src="../media/FN_watch.jpg" alt="an isolated vector image of the poster"/>
+								</div>
+
+								<div class="project_insight insight_right">
+									<div class="insight_title testing3">
+									3
 									</div>
-								</a>
-								<div class="proj_title">
-									<a class="proj_title" href="pages/poster.html"><p>This Website</p></a>
+									<p>To show that the logo works on small screens.</p>
 								</div>
-							</div>
-							<div class="card">
-								<a href="pages/poster.html">
-									<div class="img_container">
-										<img class="proj_img" src="media/tatooed_can_mockup_purp.jpg" alt="jazz orchestra poster" loading="lazy">
+
+								<div class="project_img insight_img img_right">
+									<img src="../media/FN_social.jpg" alt="All four cans in a line. A red can, yellow can, green can, and purple can."/>
+								</div>
+
+								<div class="project_insight">
+									<div class="insight_title">
+									4
 									</div>
-								</a>
-								<div class="proj_title">
-									<a class="proj_title" href="pages/poster.html"><p>Chores App</p></a>
+									<p>Pretending it was a real client, I wanted to show that the logo would work even in a small profile picture on social accounts.</p>
 								</div>
+
+								<div class="project_img insight_img img_left">
+									<img src="../media/FN_car.jpg" alt="an isolated vector image of the poster"/>
+								</div>
+
+								<div class="project_insight insight_right">
+									<div class="insight_title">
+									5
+									</div>
+									<p>Experimenting with different colors. I liked the dramatic feel of the red. It almost feels like it’s saying the town is in peril and needs saving.</p>
+								</div>
+
+								<div class="project_img insight_img img_right">
+									<img src="../media/FN_phone_mockup.jpg" alt="an isolated vector image of the poster"/>
+								</div>
+
+								<div class="project_insight">
+									<div class="insight_title">
+									6
+									</div>
+									<p>I also made an alternative design for the client, but the superhero design was unanimously chosen as the favorite.</p>
+								</div>
+
+								<div class="more_work">
+									<div class="more_work_title">
+									More Work
+									</div>
+									<div class="project_select">
+										<a href="chewybrew.html" class="more_work_left">
+											<img src="../media/back_arrow.svg" alt="back arrow"/>
+											<p>Chewy <br>Brew Co.</p>
+										</a>
+										<a href="#" class="more_work_right">
+											<img src="../media/back_arrow.svg" alt="next arrow"/>
+											<p>Daily <br>Checklist</p>
+										</a>
+									</div>
+								</div>
+
 							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-				
-				
-<!--
-				<div class="carousel_wrapper">
-					<div class="carousel_arrow_left" aria-label="Previous Slide"><div class="carousel_arrow large_arrow left"><div class="carousel_arrow small_arrow"></div></div></div>
 
 
-					<div class="project_card_wrapper">
-						add scroll on the x axis with mandatory scroll snap behavior
-also add a last child element innerHTML to beggining of carousel
 
-						<a href="pages/poster.html" class="project_card active_card">
-							<div class="project_image_wrapper">
-								<div class="project_image project_1"></div>
-							</div>
-							<div class="project_card_text flex">
-								<p class="project_desc"><span class="project_name">Flying Nickel</span> Jan, 2022</p>
-								<p class="more_info">more info &gt;</p>
-							</div>
-						</a>
-
-						<a href="pages/chewybrew.html" class="project_card inactive_card">
-							<div class="project_image_wrapper">
-								<div class="project_image project_2"></div>
-							</div>
-							<div class="project_card_text flex">
-								<p class="project_desc"><span class="project_name">Chewy Brew Co.</span> Nov, 2021</p>
-								<p class="more_info">more info &gt;</p>
-							</div>
-						</a>
-
-						<a href="#?3" class="project_card inactive_card">
-							<div class="project_image_wrapper">
-								<div class="project_image project_3"></div>
-							</div>
-							<div class="project_card_text flex">
-								<p class="project_desc"><span class="project_name">Concert Poster</span>March, 2020</p>
-								<p class="more_info">more info &gt;</p>
-							</div>
-						</a>
-
-						<a href="#?4" class="project_card inactive_card">
-							<div class="project_image_wrapper">
-								<div class="project_image project_4"></div>
-							</div>
-							<div class="project_card_text flex">
-								<p class="project_desc"><span class="project_name">Cake Pop Planet</span> logo/branding</p>
-								<p class="more_info">more info &gt;</p>
-							</div>
-						</a>
-
-						<a href="#?5" class="project_card inactive_card">
-							<div class="project_image_wrapper">
-								<div class="project_image project_5"></div>
-							</div>
-							<div class="project_card_text flex">
-								<p class="project_desc"><span class="project_name">To-Do App</span> logo/branding</p>
-								<p class="more_info">more info &gt;</p>
-							</div>
-						</a>
-
-					</div>
-					<div class="carousel_arrow_right" aria-label="Next Slide"><div class="carousel_arrow large_arrow right"><div class="carousel_arrow small_arrow"></div></div></div>
-					<div class="carousel_indicator_wrapper">
-						<div class="indicator active_dot"></div>
-						<div class="indicator"></div>
-						<div class="indicator"></div>
-						<div class="indicator"></div>
-						<div class="indicator"></div>
-					</div>
-			  </div>
-
-			</div>
--->
-		</section>
-		<section id="about_section">
-			<div class="section_header bkgd_primary content_wrapper">
-				<div class="header_margin">
-					<p class="section_title">ABOUT ME</p>
-				</div>
-			</div>
-			<div class="about_wrapper content_wrapper">
-				<div class="about_text_image_wrapper">
-					<div class="about_img_container">
-
-					</div>
-					<div class="about_text_wrapper flex">
-						<div class="about_text">
-							<h3>Who is Kevin?</h3>
-							<h4>the man behind the mustache</h4>
-							<p>I am a designer and web developer, but more importantly, I'm someone who loves creating unique websites and designs that showcase the personality of a brand. Each project is a new puzzle and an opportunity to make a lasting impression. Whether it’s with a cute little cactus dude, or just a clean interface, there’s always something new to explore. That's what keeps me excited to take on the next project.</p>
-							<p>When I’m not designing or working on websites, I enjoy spending my time playing baseball, running, golfing, playing fantasy football, knitting, board gaming, and exploring new places around Phoenix.</p>
-						</div>
-					</div>
-				</div>
-				<div class="achievement_box">
-					<p class="ach_title">Achievements</p>
-					<div class="achievements_wrapper">
-						<div class="achievement">
-							<div class="img_box">
-								<img class="ach_img cert" src="media/web_dev_cert_icon.svg" alt=""/>
-							</div>
-							<p>Frontend web developer certificate</p>
-						</div>
-						<div class="achievement">
-							<div class="img_box">
-								<img class="ach_img" src="media/AA_icon.svg" alt=""/>
-							</div>
-							<p>Associate degree in graphic design</p>
-						</div>
-						<div class="achievement">
-							<div class="img_box">
-								<img class="ach_img" src="media/BS_icon.svg" alt=""/>
-							</div>
-							<p>Bachelor’s degree in Marketing</p>
-						</div> 
-						<div class="achievement">
-							<div class="img_box">
-								<img class="ach_img cert" src="media/UX_cert_icon.svg" alt=""/>
-							</div>
-							<p>Google UX design certificate (in progress)</p>
-						</div>
 	<!--
-						<div class="achievement">
-							<div class="img_box"><img class="ach_img" src="media/kevrog_logo_black.svg" alt=""/></div>
-							<p>Over 5 years marketing experience</p>
-						</div>
+							<div id="zoomed_image_screen" class="">
+
+							</div>
 	-->
+
+
+
+						</div>
+
+						<div class="project_column_left">
+							<div class="top_vertical_line"></div>
+
+							<img class="downward_arrows" src="../media/arrows_down_orange.svg" alt="a group of arrows pointing dowm"/>
+							<img class="downward_arrows2" src="../media/arrows_down_orange.svg" alt="a group of arrows pointing dowm"/>
+
+							<div class="btm_vertical_line"></div>
+						</div>
+
+						<div class="column_right">
+
+						</div>
 					</div>
 				</div>
-			</div>  
+			</div>
 
-		</section>
+
+
+
+		</main>
 
 		<footer class="bkgd_tertiary">
 			<div class="footer_content content_wrapper">
@@ -396,7 +258,7 @@ also add a last child element innerHTML to beggining of carousel
 
 				</div>
 				<div class="logo">
-					<a href="#top" ><svg class="logo_footer">
+					<a href="../index.html" ><svg class="logo_footer">
 						<use href="#kevrog_logo"></use>
 					</svg></a>
 				</div>
@@ -411,7 +273,7 @@ also add a last child element innerHTML to beggining of carousel
 			</div> 
 		</footer>
 	</div>
-	<script src="script/script.js?4"></script>
-<!--	<script src="script/carousel_function.js?3"></script>-->
+	<script src="../script/script.js?2"></script>
+	<script src="../script/zoom_function.js?2"></script>
 </body>
 </html>
