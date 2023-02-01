@@ -315,7 +315,7 @@ header {
 
 #intro_grid {
 	display: grid;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	grid-template-rows: auto 60vh;
 	grid-template-columns: auto auto 4fr auto;
@@ -356,10 +356,11 @@ header {
 }
 
 .logo_animation > img {
-	width: 80%;
-	height: 100%;
-	padding: 0 1em 0 1em;
+	padding: 0 0 0 1em;
+}
 
+#cacti_animation {
+	width: 70%;
 }
 
 .icon_list_left {
@@ -1058,20 +1059,6 @@ footer {
 		width: 100%;
 		border-top: 2px solid #000000;
 		margin: auto auto 0 0;
-
-	}
-*/
-	
-
-/*
-	.header_margin::after {
-		display: inline-block;
-		content: '';
-		background: orange;
-		height: 100%;
-		width: 100%;
-		border-top: 2px solid #000000;
-		margin: auto auto 0 0;
 	}
 */
 	
@@ -1127,11 +1114,11 @@ footer {
 	
 	#intro_grid {
 		display: grid;
-		width: 100%;
+		width: 100%; 
 		margin: 0 auto;
 		grid-gap: 1em;
 		grid-template-rows: 40vh 40vh;
-		grid-template-columns: auto 6fr auto;
+		grid-template-columns: auto 6fr auto auto;
 		grid-template-areas: 
 			"left title ."
 			"left animation icons"
@@ -1194,8 +1181,7 @@ footer {
 	
 	.icon_img {
 		transform: translateX(-50px);
-		height: 35px;
-		width: 35px;
+		height: 100%;
 	}
 	
 	.svg_icon_main {
@@ -1251,10 +1237,12 @@ footer {
 /*		background: purple;*/
 	}
 	
-	.logo_animation > img {
+	
+	
+	#cacti_animation {
 		height: 100%;
-		width: 40%;
-
+		width: auto;
+		padding-right: 15%;
 	}
 	
 	.section_header {
@@ -1452,7 +1440,7 @@ footer {
 	.achievements_wrapper {
 		display: grid;
 		grid-template-rows: auto;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		gap: 10%;
 		padding: 3em 4em;
 	}
@@ -1856,6 +1844,7 @@ footer {
 	.zoom_active img {
 		top: 7vh;
 	}
+	
 	.back_button {
 		transform: translateX(calc(-15vw - 4.75em));
 		margin-left: 7.5vw;
@@ -1905,7 +1894,8 @@ footer {
 		transition: all ease .25s;
 */
 	}
-
+	
+	
 	.project_heading {
 		position: absolute;
 		background: #E8D9C4;
@@ -1948,7 +1938,6 @@ footer {
 	
 	.medium_img {
 		width: 25%;
-
 	}
 	
 	.img_right {
@@ -1968,6 +1957,7 @@ footer {
 	.insight_right.project_insight * {
 		margin: 0 0 0 auto;
 	}
+	
 	.insight_title {
 		border-bottom: none;
 		border-top: 2px solid #000000;
@@ -1998,23 +1988,6 @@ footer {
 	.more_work_title {
 		width: 50%;
 		margin: .5em auto;
-
-	}
-	
-	.more_work_left:hover p,
-	.more_work_right:hover p {
-		color: #000;
-		transition: all ease .75s;
-	}
-	
-	.more_work_left p,
-	.more_work_right p {
-		font-size: 3rem;
-		line-height: 3rem;
-		-webkit-text-stroke: 2px #000;
-		text-stroke: 2px #000;
-		letter-spacing: 2px;
-
 	}
 	
 	.more_work_left:hover p,
