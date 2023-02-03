@@ -359,8 +359,13 @@ header {
 	padding: 0 0 0 1em;
 }
 
+#mountains {
+	padding: 0 1rem 20% 1rem;
+}
+
 #cacti_animation {
-	width: 70%;
+	position: absolute;
+	width: 55%;
 }
 
 .icon_list_left {
@@ -1003,6 +1008,11 @@ footer {
 	padding-bottom: .5em;
 }
 
+.email_el {
+	text-decoration: none;
+	color: #ffffff;
+}
+
 /*----- section intersection obserer styles -----*/
 
 .active_section {
@@ -1234,15 +1244,19 @@ footer {
 		grid-area: animation;
 		display: flex;
 		justify-content: flex-end;
-/*		background: purple;*/
+		padding: 0 9% 0 0;
 	}
 	
-	
+	#mountains {
+		padding: 0 0 6% 0;
+		width: 85%;
+	}
 	
 	#cacti_animation {
-		height: 100%;
+		position: absolute;
+		height: 50%;
 		width: auto;
-		padding-right: 15%;
+		padding: 0 12% 0 0;
 	}
 	
 	.section_header {
