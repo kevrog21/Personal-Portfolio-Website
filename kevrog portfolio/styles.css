@@ -1157,7 +1157,7 @@ footer {
 		flex-direction: column;
 		justify-content: flex-end;
 		grid-area: icons;
-		transform: translateX(6em);
+		transform: translateX(7vw);
 	}
 	
 	.icon_list_right {
@@ -1244,19 +1244,19 @@ footer {
 		grid-area: animation;
 		display: flex;
 		justify-content: flex-end;
-		padding: 0 9% 0 0;
+		padding: 0 0 0 0;
 	}
 	
 	#mountains {
-		padding: 0 0 6% 0;
-		width: 85%;
+		padding: 0 0 5% 0;
+		width: 65%;
 	}
 	
 	#cacti_animation {
 		position: absolute;
 		height: 50%;
 		width: auto;
-		padding: 0 12% 0 0;
+		padding: 0 9% 0 0;
 	}
 	
 	.section_header {
