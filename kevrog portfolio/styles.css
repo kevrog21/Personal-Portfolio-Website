@@ -315,7 +315,7 @@ header {
 
 #intro_grid {
 	display: grid;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	grid-template-rows: auto 60vh;
 	grid-template-columns: auto auto 4fr auto;
@@ -356,10 +356,18 @@ header {
 }
 
 .logo_animation > img {
-	width: 80%;
-	height: 100%;
-	padding: 0 1em 0 1em;
+	padding: 0 0 0 1em;
+}
 
+#mountains {
+	padding: 0 1rem 20% 1rem;
+	width: 90%;
+}
+
+#cacti_animation {
+	position: absolute;
+	width: 40%;
+	padding: 0 0 8% 10%;
 }
 
 .icon_list_left {
@@ -1002,6 +1010,11 @@ footer {
 	padding-bottom: .5em;
 }
 
+.email_el {
+	text-decoration: none;
+	color: #ffffff;
+}
+
 /*----- section intersection obserer styles -----*/
 
 .active_section {
@@ -1017,7 +1030,7 @@ footer {
 
 /*---------media queries-----------*/
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 	html {
 		scroll-snap-type: y proximity;
 	}
@@ -1047,20 +1060,6 @@ footer {
 		border: none;
 		
 	}
-	
-
-/*
-	.header_margin::after {
-		display: inline-block;
-		content: '';
-		background: orange;
-		height: 100%;
-		width: 100%;
-		border-top: 2px solid #000000;
-		margin: auto auto 0 0;
-
-	}
-*/
 	
 
 /*
@@ -1127,11 +1126,11 @@ footer {
 	
 	#intro_grid {
 		display: grid;
-		width: 100%;
+		width: 100%; 
 		margin: 0 auto;
 		grid-gap: 1em;
 		grid-template-rows: 40vh 40vh;
-		grid-template-columns: auto 6fr auto;
+		grid-template-columns: auto 6fr auto auto;
 		grid-template-areas: 
 			"left title ."
 			"left animation icons"
@@ -1160,7 +1159,7 @@ footer {
 		flex-direction: column;
 		justify-content: flex-end;
 		grid-area: icons;
-		transform: translateX(6em);
+		transform: translateX(7vw);
 	}
 	
 	.icon_list_right {
@@ -1194,8 +1193,7 @@ footer {
 	
 	.icon_img {
 		transform: translateX(-50px);
-		height: 35px;
-		width: 35px;
+		height: 100%;
 	}
 	
 	.svg_icon_main {
@@ -1248,13 +1246,19 @@ footer {
 		grid-area: animation;
 		display: flex;
 		justify-content: flex-end;
-/*		background: purple;*/
+		padding: 0 0 0 0;
 	}
 	
-	.logo_animation > img {
-		height: 100%;
-		width: 40%;
-
+	#mountains {
+		padding: 0 0 5% 0;
+		width: 65%;
+	}
+	
+	#cacti_animation {
+		position: absolute;
+		height: 50%;
+		width: auto;
+		padding: 0 9% 0 0;
 	}
 	
 	.section_header {
@@ -1452,7 +1456,7 @@ footer {
 	.achievements_wrapper {
 		display: grid;
 		grid-template-rows: auto;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		gap: 10%;
 		padding: 3em 4em;
 	}
@@ -1613,6 +1617,7 @@ footer {
 	position: relative;
 	z-index: 2;
 	display: grid;
+	cursor: zoom-in;
 }
 
 .project_img img {
@@ -1622,7 +1627,6 @@ footer {
 	margin: 2em auto;
 	border: 2px solid #000;
 	box-shadow: 5px 5px 0 #3B301D;
-	cursor: zoom-in;
 	transition: all ease .25s;
 }
 
@@ -1688,6 +1692,11 @@ footer {
 		margin: 0;
 	}
 
+.insight_img.zoom_active svg {
+	width: 90vw;
+	margin: auto;
+}
+
 .project_content p {
 	font-size: .75rem;
 	font-weight: 500;
@@ -1729,6 +1738,31 @@ footer {
 	transform: translateY(-6em);
 	transition: all ease 1s;
 }
+
+#sheep1_container {
+	
+}
+
+.sheep_eyes {
+	animation: sheep_blink 12s ease infinite;
+}
+
+.sheep_body {
+	animation: sheep_leaning_down_large_screen 10s ease infinite alternate;
+}
+
+.sheep_head {
+	transform: translateX(2%);
+	animation: sheep_head_leaning_down_large_screen 10s ease infinite alternate;
+}
+
+.sheep_jaw {
+	fill: red;
+	transform: rotate(-36deg) translate(-31.5%, 55%);
+	animation: sheep_mouth_chewing_large_screen 10s ease infinite alternate;
+}
+	
+
 
 /*
 .in_view_shift_img {
@@ -1836,7 +1870,7 @@ footer {
 
 /*---------media queries-----------*/
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 	
 	#project_grid {
 /*		display: grid;*/
@@ -1856,6 +1890,7 @@ footer {
 	.zoom_active img {
 		top: 7vh;
 	}
+	
 	.back_button {
 		transform: translateX(calc(-15vw - 4.75em));
 		margin-left: 7.5vw;
@@ -1905,7 +1940,8 @@ footer {
 		transition: all ease .25s;
 */
 	}
-
+	
+	
 	.project_heading {
 		position: absolute;
 		background: #E8D9C4;
@@ -1946,9 +1982,13 @@ footer {
 		width: 40%;
 	}
 	
+	.insight_img.zoom_active svg {
+		height: 75vh;
+		margin: auto;
+	}
+	
 	.medium_img {
 		width: 25%;
-
 	}
 	
 	.img_right {
@@ -1968,6 +2008,7 @@ footer {
 	.insight_right.project_insight * {
 		margin: 0 0 0 auto;
 	}
+	
 	.insight_title {
 		border-bottom: none;
 		border-top: 2px solid #000000;
@@ -1998,23 +2039,6 @@ footer {
 	.more_work_title {
 		width: 50%;
 		margin: .5em auto;
-
-	}
-	
-	.more_work_left:hover p,
-	.more_work_right:hover p {
-		color: #000;
-		transition: all ease .75s;
-	}
-	
-	.more_work_left p,
-	.more_work_right p {
-		font-size: 3rem;
-		line-height: 3rem;
-		-webkit-text-stroke: 2px #000;
-		text-stroke: 2px #000;
-		letter-spacing: 2px;
-
 	}
 	
 	.more_work_left:hover p,
@@ -2078,10 +2102,177 @@ footer {
 	}
 }
 
+@keyframes sheep_blink {
+	25% {
+		opacity: 100%;
+	}
+	
+	25.1% {
+		opacity: 0%;
+	}
+	
+	26.8% {
+		opacity: 0%;
+	}
+	
+	26.9% {
+		opacity: 100%;
+	}
+	
+	95% {
+		opacity: 100%;
+	}
+	
+	95.1% {
+		opacity: 0%;
+	}
+	
+	96.8% {
+		opacity: 0%;
+	}
+	
+	96.9% {
+		opacity: 100%;
+	}
+
+}
+
+@keyframes sheep_leaning_down_large_screen {
+	
+	
+	80% {
+		transform: rotate(0deg) translate(0);
+	}
+	
+	95% {
+		transform: rotate(10deg) translate(9%, -3%);
+	}
+	
+	100% {
+		transform: rotate(10deg) translate(9%, -3%);
+	}
+}
+
+
+@keyframes sheep_head_leaning_down_large_screen {
+	
+	
+	80% {
+		transform: rotate(0deg) translate(2%, 0)
+	}
+	
+	95% {
+		transform: rotate(12deg) translate(14%, 1%);
+	}
+	
+	100% {
+		transform: rotate(12deg) translate(14%, 1%);
+	}
+}
+
+
+@keyframes sheep_mouth_chewing_large_screen {
+	10% {
+		transform: rotate(-36deg) translate(-31.5%, 55%);
+	}
+	
+	15% {
+		transform: rotate(-35.25deg) translate(-31.5%, 55%);
+	}
+	
+	20% {
+		transform: rotate(-36deg) translate(-31.5%, 55%);
+	}
+	
+	25% {
+		transform: rotate(-35deg) translate(-31.5%, 55%);
+	}
+	
+	30% {
+		transform: rotate(-36deg) translate(-31.5%, 55%);
+	}
+	
+	35% {
+		transform: rotate(-35.25deg) translate(-31.5%, 55%);
+	}
+	
+	40% {
+		transform: rotate(-36deg) translate(-31.5%, 55%);
+	}
+	
+	45% {
+		transform: rotate(-35.5deg) translate(-31.5%, 55%);
+	}
+	
+	80% {
+		transform: rotate(-36deg) translate(-31.5%, 55%);
+	}
+	
+	95% {
+		transform: rotate(-35.25deg) translate(-31.5%, 55%);
+	}
+	
+	98% {
+		transform: rotate(-36deg) translate(-31.5%, 55%);
+	}
+	100% {
+		transform: rotate(-35.5deg) translate(-31.5%, 55%);
+	}
+}
 
 
 
-
+/*
+@keyframes sheep_mouth_chewing_large_screen {
+	10% {
+		transform: rotate(45deg) translateY(35%);
+	}
+	
+	15% {
+		transform: rotate(36deg) translateY(0);
+	}
+	
+	20% {
+		transform: rotate(45deg) translateY(35%);
+	}
+	
+	25% {
+		transform: rotate(36deg) translateY(0);
+	}
+	
+	30% {
+		transform: rotate(45deg) translateY(35%);
+	}
+	
+	35% {
+		transform: rotate(36deg) translateY(0);
+	}
+	
+	40% {
+		transform: rotate(45deg) translateY(35%);
+	}
+	
+	45% {
+		transform: rotate(36deg) translateY(0);
+	}
+	
+	80% {
+		transform: rotate(36deg) translateY(0);
+	}
+	
+	95% {
+		transform: translateY(470%) rotate(60deg)
+	}
+	
+	98% {
+		transform: translateY(465%) rotate(80deg)
+	}
+	
+	100% {
+		transform: translateY(470%) rotate(60deg);
+	}
+}
+*/
 
 
 
