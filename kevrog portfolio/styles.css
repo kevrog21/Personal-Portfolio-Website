@@ -361,11 +361,14 @@ header {
 
 #mountains {
 	padding: 0 1rem 20% 1rem;
+	width: 90%;
 }
 
 #cacti_animation {
 	position: absolute;
-	width: 55%;
+	width: 40%;
+	padding: 0 0 8% 10%;
+
 }
 
 .icon_list_left {
@@ -1028,7 +1031,7 @@ footer {
 
 /*---------media queries-----------*/
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 	html {
 		scroll-snap-type: y proximity;
 	}
@@ -1615,6 +1618,7 @@ footer {
 	position: relative;
 	z-index: 2;
 	display: grid;
+	cursor: zoom-in;
 }
 
 .project_img img {
@@ -1624,7 +1628,6 @@ footer {
 	margin: 2em auto;
 	border: 2px solid #000;
 	box-shadow: 5px 5px 0 #3B301D;
-	cursor: zoom-in;
 	transition: all ease .25s;
 }
 
@@ -1690,6 +1693,11 @@ footer {
 		margin: 0;
 	}
 
+.insight_img.zoom_active svg {
+	width: 90vw;
+	margin: auto;
+}
+
 .project_content p {
 	font-size: .75rem;
 	font-weight: 500;
@@ -1731,6 +1739,31 @@ footer {
 	transform: translateY(-6em);
 	transition: all ease 1s;
 }
+
+#sheep1_container {
+	
+}
+
+.sheep_eyes {
+	animation: sheep_blink 12s ease infinite;
+}
+
+.sheep_body {
+	animation: sheep_leaning_down_large_screen 10s ease infinite alternate;
+}
+
+.sheep_head {
+	transform: translateX(2%);
+	animation: sheep_head_leaning_down_large_screen 10s ease infinite alternate;
+}
+
+.sheep_jaw {
+	fill: red;
+	transform: rotate(-36deg) translate(-31.5%, 55%);
+	animation: sheep_mouth_chewing_large_screen 10s ease infinite alternate;
+}
+	
+
 
 /*
 .in_view_shift_img {
@@ -1838,7 +1871,7 @@ footer {
 
 /*---------media queries-----------*/
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 	
 	#project_grid {
 /*		display: grid;*/
@@ -1948,6 +1981,11 @@ footer {
 	
 	.insight_img {
 		width: 40%;
+	}
+	
+	.insight_img.zoom_active svg {
+		height: 75vh;
+		margin: auto;
 	}
 	
 	.medium_img {
@@ -2065,10 +2103,177 @@ footer {
 	}
 }
 
+@keyframes sheep_blink {
+	25% {
+		opacity: 100%;
+	}
+	
+	25.1% {
+		opacity: 0%;
+	}
+	
+	26.8% {
+		opacity: 0%;
+	}
+	
+	26.9% {
+		opacity: 100%;
+	}
+	
+	95% {
+		opacity: 100%;
+	}
+	
+	95.1% {
+		opacity: 0%;
+	}
+	
+	96.8% {
+		opacity: 0%;
+	}
+	
+	96.9% {
+		opacity: 100%;
+	}
+
+}
+
+@keyframes sheep_leaning_down_large_screen {
+	
+	
+	80% {
+		transform: rotate(0deg) translate(0);
+	}
+	
+	95% {
+		transform: rotate(10deg) translate(9%, -3%);
+	}
+	
+	100% {
+		transform: rotate(10deg) translate(9%, -3%);
+	}
+}
+
+
+@keyframes sheep_head_leaning_down_large_screen {
+	
+	
+	80% {
+		transform: rotate(0deg) translate(2%, 0)
+	}
+	
+	95% {
+		transform: rotate(12deg) translate(14%, 1%);
+	}
+	
+	100% {
+		transform: rotate(12deg) translate(14%, 1%);
+	}
+}
+
+
+@keyframes sheep_mouth_chewing_large_screen {
+	10% {
+		transform: rotate(-36deg) translate(-31.5%, 55%);
+	}
+	
+	15% {
+		transform: rotate(-35.25deg) translate(-31.5%, 55%);
+	}
+	
+	20% {
+		transform: rotate(-36deg) translate(-31.5%, 55%);
+	}
+	
+	25% {
+		transform: rotate(-35deg) translate(-31.5%, 55%);
+	}
+	
+	30% {
+		transform: rotate(-36deg) translate(-31.5%, 55%);
+	}
+	
+	35% {
+		transform: rotate(-35.25deg) translate(-31.5%, 55%);
+	}
+	
+	40% {
+		transform: rotate(-36deg) translate(-31.5%, 55%);
+	}
+	
+	45% {
+		transform: rotate(-35.5deg) translate(-31.5%, 55%);
+	}
+	
+	80% {
+		transform: rotate(-36deg) translate(-31.5%, 55%);
+	}
+	
+	95% {
+		transform: rotate(-35.25deg) translate(-31.5%, 55%);
+	}
+	
+	98% {
+		transform: rotate(-36deg) translate(-31.5%, 55%);
+	}
+	100% {
+		transform: rotate(-35.5deg) translate(-31.5%, 55%);
+	}
+}
 
 
 
-
+/*
+@keyframes sheep_mouth_chewing_large_screen {
+	10% {
+		transform: rotate(45deg) translateY(35%);
+	}
+	
+	15% {
+		transform: rotate(36deg) translateY(0);
+	}
+	
+	20% {
+		transform: rotate(45deg) translateY(35%);
+	}
+	
+	25% {
+		transform: rotate(36deg) translateY(0);
+	}
+	
+	30% {
+		transform: rotate(45deg) translateY(35%);
+	}
+	
+	35% {
+		transform: rotate(36deg) translateY(0);
+	}
+	
+	40% {
+		transform: rotate(45deg) translateY(35%);
+	}
+	
+	45% {
+		transform: rotate(36deg) translateY(0);
+	}
+	
+	80% {
+		transform: rotate(36deg) translateY(0);
+	}
+	
+	95% {
+		transform: translateY(470%) rotate(60deg)
+	}
+	
+	98% {
+		transform: translateY(465%) rotate(80deg)
+	}
+	
+	100% {
+		transform: translateY(470%) rotate(60deg);
+	}
+}
+*/
 
 
 
