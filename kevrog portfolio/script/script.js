@@ -42,6 +42,17 @@ function turnRed() {
 	topAmpersand.classList.toggle("red")
 }
 
+//add email address (in JS to avoid email scrapers) using setAttribute
+const emailEl = document.querySelectorAll('.email_el')
+const email = 'kev@kevrog.com'
+
+emailEl.forEach( element => element.setAttribute("href", `mailto:${email}`))
+
+
+
+
+//emailEl.insertAdjacentHTML( 'afterend', `<a href="t" > `)
+//emailAd.insertAdjacentHTML( 'afterend', `</a>`)
 
 
 //footer current year

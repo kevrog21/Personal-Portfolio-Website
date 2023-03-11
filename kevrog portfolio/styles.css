@@ -16,7 +16,7 @@ html, body {
 }
 
 body {
-	
+	overflow-x: hidden;
 }
 
 img {
@@ -145,8 +145,9 @@ header {
 }
 
 .nav_logo {
-	width: 30px;
-	height: 30px;
+	width: 4.5vh;
+	height: 4.5vh;
+	padding: 0 .5vh;
 	fill: #fff;
 }
 
@@ -368,7 +369,6 @@ header {
 	position: absolute;
 	width: 40%;
 	padding: 0 0 8% 10%;
-
 }
 
 .icon_list_left {
@@ -747,124 +747,9 @@ header {
 }
 
 
-.more_info {
-	color: #FF1C31;
-	transition: all ease .3s;
-	display: none;
-}
-
-.more_info:hover {
-	color: #000000;
-}
-
-.active_card {
-	display: block;
-	visibility: visible;
-}
-
-.slide_in_next {
-	animation: slideInNext .75s ease 1;
-}
-
-.slide_in_prev {
-	animation: slideInPrev .75s ease 1;
-}
-
-.slide_out_prev {
-/*
-	visibility: hidden;
-	opacity: 0%;
-	transition: visibility 0s .75s, opacity ease .5s .25s;
-*/
-	animation: slideOutPrev .75s ease 1;
-}
-
-.slide_out_next {
-/*
-	visibility: hidden;
-	opacity: 0%;
-	transition: visibility 0s .75s, opacity ease .5s .25s;
-*/
-	animation: slideOutNext .75s ease 1;
-}
-
-
-/*
-@keyframes slideInNext {
-	0% {
-		transform: translateX(100%);
-	}
-	100% {
-		transform: translateX(0%);
-	}
-}
-
-@keyframes slideOutNext {
-	0% {
-		transform: translateX(0%);
-	}
-	100% {
-		transform: translateX(-100%);
-	}
-}
-
-@keyframes slideInPrev {
-	0% {
-		transform: translateX(-100%);
-	}
-	100% {
-		transform: translateX(0%);
-	}
-}
-
-@keyframes slideOutPrev {
-	0% {
-		transform: translateX(0%);
-	}
-	100% {
-		transform: translateX(100%);
-	}
-}
-*/
 
 
 
-
-/*
-
-.active_card:hover {
-	animation: slideRight 2s ease 1;
-}
-
-
-.carousel_arrow_right:active .active_card {
-	animation: slideRight 2s ease 1;
-}
-*/
-
-
-
-/*
-.visible_prev {
-	display: block;
-	background: green;
-	transition: all ease 1s;
-	transform: translateX(-90%);
-}
-
-.slide_right {
-	animation: slideRight 1s ease 1;
-}
-
-.left_ {
-	transform: translateX(-100%);
-}
-
-.fade_display {
-	opacity: 0%;
-	transition: opacity 2s 2s;
-}
-*/
 
 
 /*<-------- end projects section ---------->*/
@@ -1063,20 +948,11 @@ footer {
 	}
 	
 
-/*
-	.header_margin::after {
-		display: inline-block;
-		content: '';
-		background: orange;
-		height: 100%;
-		width: 100%;
-		border-top: 2px solid #000000;
-		margin: auto auto 0 0;
-	}
-*/
+
+
 	
 	.content_wrapper {
-		width: 70%;
+		width: 90%;
 	}
 	
 	.nav {
@@ -1093,9 +969,8 @@ footer {
 	}
 	
 	.nav_logo {
-		fill: #fff;
-		width: 3.5em;
-		height: 3.5em;
+		width: 5vh;
+		height: 5vh;
 	}
 	
 	.nav_name {
@@ -1106,6 +981,7 @@ footer {
 	#nav_links {
 		display: flex;
 		text-transform: uppercase;
+		font-size: .8rem;
 	}
 	
 	.active {
@@ -1120,9 +996,8 @@ footer {
 	}
 	
 	li > a {
-		margin: 0 1em;
+		margin: 0 .7em;
 		text-decoration: none;
-		color: red;
 	}
 	
 	#intro_grid {
@@ -1143,13 +1018,16 @@ footer {
 	.intro_text {
 		display: flex;
 		flex-direction: column;
-		width: 80%;
+		width: 100%;
 		grid-area: title;
 		margin: 3em 0 1.5em 0;
 		padding: 3em 0 0 0;
 /*		background: blue;*/
 	}
 	
+	.intro_text::before {
+		width: 80%;
+	}
 	
 	.icon_list_left {
 		display: none;
@@ -1266,6 +1144,7 @@ footer {
 		position: sticky;
 		top: 8.5vh;
 	}
+	
 	
 	
 /*<-------- projects section ---------->*/	
@@ -1386,17 +1265,6 @@ footer {
 		line-height: 2.5rem;
 	}
 
-	.more_info {
-		display: block;
-		padding: .5rem 0 0 0;
-		color: #FF1C31;
-		transition: all ease .3s;
-	}
-
-	.more_info:hover {
-		color: #000000;
-	}
-
 	.active_card {
 		display: block;
 		visibility: visible;
@@ -1478,7 +1346,7 @@ footer {
 		box-shadow: -5px 5px 0px black;
 /*		margin: 2em;*/
 	}
-	
+
 	.ach_img {
 		width: 70%;
 	}
@@ -1528,8 +1396,9 @@ footer {
 	
 	
 	.active_section {
-		width: 100%;
+		width: 100vw;
 		border-bottom: 2px solid #000000;
+		
 	}
 	
 
@@ -1538,7 +1407,6 @@ footer {
 		text-shadow: none;
 		width: 100%;
 		line-height: 2rem;
-		
 	}
 	
 	
@@ -1546,6 +1414,32 @@ footer {
 	
 	
 }
+
+@media (min-width: 1475px) {
+	
+	.content_wrapper {
+		width: 70%;
+	}
+	
+	#nav_links {
+		font-size: 1rem;
+	}
+	
+	
+	.achievement p {
+		width: 70%;
+		text-align: center;
+	}
+	
+	.active_section {
+		width: 100vw;
+	}
+	
+	
+}
+	
+
+
 
 
 
@@ -1871,7 +1765,8 @@ footer {
 
 /*---------media queries-----------*/
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
+	
 	
 	#project_grid {
 /*		display: grid;*/
@@ -1893,13 +1788,12 @@ footer {
 	}
 	
 	.back_button {
-		transform: translateX(calc(-15vw - 4.75em));
-		margin-left: 7.5vw;
+		transform: translateX(calc(-2vw - 4.75em));
 	}
 	
 	.back_button img {
-		width: 2.5em;
-		height: 2.5em;
+		width: 2.5vw;
+		height: 2.5vw;
 	}
 	
 	.feature_overview_container {
@@ -1919,7 +1813,7 @@ footer {
 	}
 	
 	.overview_title {
-		margin: 12em 1em 0 .5em;
+		margin: 15vw 1em 0 .5em;
 		border-top: 2px solid #000000;
 		border-bottom: 0;
 		padding: .25em 0;
@@ -1927,7 +1821,7 @@ footer {
 	
 	
 	.feature_img {
-		width: 100%;
+		width: 50%;
 		order: 2;
 /*		margin: 3em 0 0 auto;*/
 		
@@ -1962,10 +1856,10 @@ footer {
 		letter-spacing: 2px;
 		text-transform: uppercase;
 		font-family: 'Passion One', cursive;
-		font-size: 5rem;
+		font-size: 4vw;
 		padding: .5rem 0;
 		max-width: 65%;
-		line-height: 4rem;
+		line-height: 3vw;
 	}
 	
 	
@@ -2033,7 +1927,7 @@ footer {
 	
 	.project_wrapper {
 		margin: 0 auto;
-		width: 70%;
+		width: 90%;
 		
 	}
 	
@@ -2058,6 +1952,31 @@ footer {
 	}
 	
 }
+
+@media (min-width: 1300px) {
+	
+	.feature_img {
+		width: 100%;
+	}
+}
+
+
+@media (min-width: 1475px) {
+	
+	.project_wrapper {
+		margin: 0 auto;
+		width: 70%;
+		
+	}
+	
+	.back_button {
+		transform: translateX(calc(-15vw - 4.75em));
+		margin-left: 7.5vw;
+	}
+	
+}
+
+
 
 
 
@@ -2220,60 +2139,6 @@ footer {
 		transform: rotate(-35.5deg) translate(-31.5%, 55%);
 	}
 }
-
-
-
-/*
-@keyframes sheep_mouth_chewing_large_screen {
-	10% {
-		transform: rotate(45deg) translateY(35%);
-	}
-	
-	15% {
-		transform: rotate(36deg) translateY(0);
-	}
-	
-	20% {
-		transform: rotate(45deg) translateY(35%);
-	}
-	
-	25% {
-		transform: rotate(36deg) translateY(0);
-	}
-	
-	30% {
-		transform: rotate(45deg) translateY(35%);
-	}
-	
-	35% {
-		transform: rotate(36deg) translateY(0);
-	}
-	
-	40% {
-		transform: rotate(45deg) translateY(35%);
-	}
-	
-	45% {
-		transform: rotate(36deg) translateY(0);
-	}
-	
-	80% {
-		transform: rotate(36deg) translateY(0);
-	}
-	
-	95% {
-		transform: translateY(470%) rotate(60deg)
-	}
-	
-	98% {
-		transform: translateY(465%) rotate(80deg)
-	}
-	
-	100% {
-		transform: translateY(470%) rotate(60deg);
-	}
-}
-*/
 
 
 
