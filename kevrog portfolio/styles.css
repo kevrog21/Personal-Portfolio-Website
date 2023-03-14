@@ -1396,7 +1396,7 @@ footer {
 	
 	
 	.active_section {
-		width: 100vw;
+		width: 100%;
 		border-bottom: 2px solid #000000;
 		
 	}
