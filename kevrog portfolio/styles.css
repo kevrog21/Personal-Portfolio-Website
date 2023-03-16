@@ -937,14 +937,15 @@ footer {
 	
 	
 	.section_title {
-		text-align: center;
 		letter-spacing: 2px;
 		text-transform: uppercase;
-		font-size: 4.5rem;
+		font-size: 3rem;
 	/*	background: orange;*/
-		line-height: 5rem;
+		line-height: 3.5rem;
 		border: none;
-		
+		display: inline-block;
+		text-align: start;
+		margin: 0 0 0 2em;
 	}
 	
 
@@ -1403,10 +1404,10 @@ footer {
 	
 
 	.active_section p {
-		font-size: 2rem;
+		display: inline-block;
 		text-shadow: none;
-		width: 100%;
-		line-height: 2rem;
+		margin: 0 42.5%;
+		
 	}
 	
 	
@@ -1432,7 +1433,7 @@ footer {
 	}
 	
 	.active_section {
-		width: 100vw;
+		width: 100%;
 	}
 	
 	
@@ -1515,7 +1516,8 @@ footer {
 	cursor: zoom-in;
 }
 
-.project_img img {
+.project_img img,
+.project_img  video {
 	width: 100%;
 	grid-column: 1;
 	grid-row: 1;
@@ -1587,7 +1589,9 @@ footer {
 		margin: 0;
 	}
 
-.insight_img.zoom_active svg {
+.insight_img.zoom_active svg,
+.insight_img.zoom_active video
+{
 	width: 90vw;
 	margin: auto;
 }
