@@ -51,6 +51,8 @@ h3 {
 }
 
 .section_title {
+	position: relative;
+	left: 0;
 	font-size: 1.5rem;
 	font-weight: 600;
 	color: #000000;
@@ -86,7 +88,9 @@ footer {
 	padding: 1px 0 0 0;
 }
 
-
+#intro_nav {
+	display: none;
+}
 
 
 
@@ -406,6 +410,7 @@ header {
 
 .header_margin {
 	margin: 5em 0 0 0;
+	width: 100%;
 }
 
 .break_background {
@@ -933,10 +938,13 @@ footer {
 		font-weight: 300;
 	}
 
-	
+	#intro_nav {
+		display: block;
+	}
 	
 	
 	.section_title {
+		width: auto;
 		letter-spacing: 2px;
 		text-transform: uppercase;
 		font-size: 3rem;
@@ -945,7 +953,7 @@ footer {
 		border: none;
 		display: inline-block;
 		text-align: start;
-		margin: 0 0 0 2em;
+		margin: 0 0 0 5rem;
 	}
 	
 
@@ -1023,11 +1031,12 @@ footer {
 		grid-area: title;
 		margin: 3em 0 1.5em 0;
 		padding: 3em 0 0 0;
-/*		background: blue;*/
+		
 	}
 	
 	.intro_text::before {
 		width: 80%;
+		animation:  revealLeftToRightDesktop .75s ease 1;
 	}
 	
 	.icon_list_left {
@@ -1404,10 +1413,13 @@ footer {
 	
 
 	.active_section p {
+		width: auto;
 		display: inline-block;
 		text-shadow: none;
-		margin: 0 42.5%;
-		
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: 0;
 	}
 	
 	
@@ -2007,6 +2019,16 @@ footer {
 		width: 100%;
 	}
 }
+
+@keyframes revealLeftToRightDesktop {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 80%;
+	}
+}
+
 
 @keyframes revealTopToBottom {
 	0% {
