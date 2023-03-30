@@ -1663,16 +1663,15 @@ footer {
 }
 
 .sheep_head {
-	transform: translateX(2%);
-	animation: sheep_head_leaning_down_large_screen 10s ease infinite alternate;
-}
+		transform: translateX(2%);
+		animation: sheep_head_leaning_down_large_screen 10s ease infinite alternate;
+	}
 
 .sheep_jaw {
-	fill: red;
 	transform: rotate(-36deg) translate(-31.5%, 55%);
 	animation: sheep_mouth_chewing_large_screen 10s ease infinite alternate;
 }
-	
+
 
 
 /*
@@ -1967,6 +1966,16 @@ footer {
 		letter-spacing: 2px;
 	}
 	
+	
+	
+}
+
+@supports (-webkit-touch-callout: none) {
+	.sheep_head {
+		transform: translateX(2%);
+		animation: sheep_head_leaning_down_small_screen 10s ease infinite alternate;
+	}
+	
 }
 
 @media (min-width: 1300px) {
@@ -2104,7 +2113,7 @@ footer {
 	
 	
 	80% {
-		transform: rotate(0deg) translate(2%, 0)
+		transform: rotate(0deg) translate(2%, 0);
 	}
 	
 	95% {
@@ -2115,6 +2124,27 @@ footer {
 		transform: rotate(12deg) translate(14%, 1%);
 	}
 }
+
+
+@keyframes sheep_head_leaning_down_small_screen {
+	
+	0% {
+		transform: rotate(0deg) translateX(2%);
+	}
+	
+	80% {
+		transform: rotate(0deg) translateX(2%);
+	}
+	
+	95% {
+		transform: rotate(12deg) translateX(14%);
+	}
+	
+	100% {
+		transform: rotate(12deg) translateX(14%);
+	}
+}
+
 
 
 @keyframes sheep_mouth_chewing_large_screen {
