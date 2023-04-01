@@ -85,7 +85,7 @@ footer {
  }
 
 #project_section {
-	padding: 1px 0 0 0;
+	padding: 1px 0 4em 0;
 }
 
 #intro_nav {
@@ -514,6 +514,8 @@ header {
 }
 */
 
+
+
 .project_col_wrapper {
 	width: 100%;
 	display: flex;
@@ -751,9 +753,21 @@ header {
 	display: block;
 }
 
+#more_work {
+	text-align: center;
+	font-size: 4vw;
+	font-weight: 600;
+	color: #FF1C31;
+	padding: 0 0 .25rem 0;
+	width: 35vw;
+	margin: 0 auto 4em auto;
+	border-bottom: 2px solid #FF1C31;
+}
 
-
-
+#more_work a {
+	color: #FF1C31;
+	text-decoration: none;
+}
 
 
 
@@ -1161,7 +1175,6 @@ footer {
 	
 	.project_col_wrapper {
 		flex-direction: column;
-		margin-bottom: 10em;
 	}
 	
 	.proj_type {
@@ -1285,7 +1298,12 @@ footer {
 		display: inline;
 	}
 	
-	
+	#more_work {
+		font-size: 1.5vw;
+		width: 13vw;
+		padding-top: 3em;
+	}
+
 	
 	
 	
