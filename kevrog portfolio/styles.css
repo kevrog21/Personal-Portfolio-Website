@@ -68,13 +68,6 @@ h3 {
 
 #scroll_container {
 	
-/*
-	height: 100vh;
-	overflow-y: auto;
-	overflow-x: hidden;
-	scroll-behavior: smooth;
-	scroll-snap-type: y proximity;
-*/
 }
 
 #top,
@@ -103,12 +96,10 @@ footer {
 .amp {
 	display: inline-block;
 	color: rgba(188,78,212,1);
-/*	border: 2px solid #000;*/
 }
 
 .amp2 {
 	display: inline-block;
-/*	border: 2px solid red;*/
 	position: relative;
 	z-index: 2;
 	top: 0;
@@ -208,7 +199,6 @@ header {
 
 .rotate::before {
 	transform: rotate(45deg) translate(6px, 6px);
-/*	transform: rotate(-135deg) translate(-6px, -6px);*/
 	transition: transform ease .35s;
 }
 
@@ -243,7 +233,6 @@ header {
 .slide {
 	display: block;
 	left: 0;
-/*	transform: translateY(-100vw);*/
 	transition: left ease .35s;
 }
 
@@ -254,14 +243,12 @@ header {
 	flex-direction: column;
 	padding: 0 0 0 0;
 	margin: .25em 1em;
-/*	background: yellow;*/
 	font-size: 1.25rem;
 }
 
 .mobile_nav a {
 	text-decoration: none;
 	color: #ffffff;
-/*	background: orange;*/
 	margin: 0 2em;
 	padding: 1em 0;
 	border-bottom: 2px solid #ffffff;
@@ -283,14 +270,6 @@ header {
 	margin: auto 0 auto auto;
 	border: solid #ffffff;
 	border-width: 0 2px 2px 0;
-}
-
-.carousel_arrow {
-	width: 1rem;
-	height: 1rem;
-	border: solid #9B9597;
-	border-width: 0 3px 3px 0;
-	transition: all ease .3s;
 }
 
 .small_arrow {
@@ -328,14 +307,12 @@ header {
 		"title title title title"
 		"left left animation animation"
 		;
-/*	background: orange;*/
 	padding-bottom: 8em;
 }
 
 .intro_text {
 	grid-area: title;
 	margin: 1.5em 1em;
-/*	background: orange;*/
 }
 
 
@@ -457,17 +434,6 @@ header {
 	margin: 1em auto;
 }
 
-/*
-.vertical_line {
-	flex-shrink: 0;
-	height: 10px;
-	width: 20px;
-	background: red;
-}
-*/
-
-
-
 .vertical_line {
 	flex-shrink: 0;
 	height: 25vh;
@@ -502,18 +468,6 @@ header {
 
 
 /*<-------- projects section ---------->*/
-
-/*
-.vertical_line::before {
-	display: inline-block;
-	content: '';
-	position: static;
-	height: 100%;
-	border-left: 1px solid #FF1C31;
-	animation:  revealTopToBottom .75s ease 1;
-}
-*/
-
 
 
 .project_col_wrapper {
@@ -589,83 +543,6 @@ header {
 .proj_title {
 	margin: .25em 0;
 }
-
-/*
-
-.carousel_wrapper {
-	display: grid;
-	width: 100%;
-	height: 50vh;
-	margin: 10em auto;
-	padding: 3% 0;
-	grid-template-rows: 85% auto;
-	grid-template-columns: auto 75% auto;
-	grid-template-areas: 
-		"card card card"
-		"arrowL ind arrowR"
-		;
-}
-
-.carousel_arrow_left {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	grid-area: ind;
-	padding: 1em 0 0 3em;
-}
-
-
-
-.carousel_arrow_right {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-end;
-	grid-area: ind;
-	padding: 1em 3em 0 0;
-}
-
-.carousel_arrow_left:hover .carousel_arrow,
-.carousel_arrow_right:hover .carousel_arrow,
-.carousel_arrow_left:focus .carousel_arrow,
-.carousel_arrow_right:focus .carousel_arrow {
-	border-color: #FF1C31;
-}
-
-.carousel_indicator_wrapper {
-	display: flex;
-	grid-area: ind;
-	justify-content: center;
-	align-items: center;
-	padding-top: 1em;
-}
-
-.indicator {
-	background: #FF1C31;
-	border-radius: 50%;
-	width: 8px;
-	height: 8px;
-	margin: 5px;
-	opacity: .75;
-}
-
-.active_dot {
-	height: 14px;
-	width: 14px;
-	opacity: 1;
-	transition: all ease .5s;
-}
-*/
-
-/*
-.project_card_wrapper {
-	display: grid;
-	grid-area: card;
-	box-sizing: content-box;
-	overflow: hidden;
-}
-*/
 
 .project_link {
 	grid-column: 1;
@@ -962,7 +839,6 @@ footer {
 		letter-spacing: 2px;
 		text-transform: uppercase;
 		font-size: 3rem;
-	/*	background: orange;*/
 		line-height: 3.5rem;
 		border: none;
 		display: inline-block;
@@ -1034,7 +910,6 @@ footer {
 			"left title ."
 			"left animation icons"
 			;
-/*		background: orange;*/
 	
 	}
 	
@@ -1203,69 +1078,8 @@ footer {
 		font-size: 1.25rem;
 		margin: .25em 0;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	.carousel_wrapper {
-		display: grid;
-		width: 65%;
-		height: 70vh;
-		margin: 10em auto;
-		padding: 3% 0;
-		border-top: none;
-		border-bottom: none;
-		grid-template-rows: 95% 5%;
-		grid-template-columns: auto 75% auto;
-		grid-template-areas: 
-			"arrowL card arrowR"
-			". ind ."
-			;
-	}
-	
-	.carousel_arrow {
-		width: 2rem;
-		height: 2rem;
-		border: solid #9B9597;
-		border-width: 0 3px 3px 0;
-		transition: all ease .3s;
-	}
-	
-	.carousel_arrow_left {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-end;
-		grid-area: arrowL;
-	}
+		
 
-	.carousel_arrow_right {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-		grid-area: arrowR;
-	}
-	
-	.small_arrow {
-		width: 35%;
-		height: 35%;
-		margin: auto 0;
-		transform: translate(75%, 75%);
-	}
-
-	.carousel_arrow_left:hover .carousel_arrow,
-	.carousel_arrow_right:hover .carousel_arrow,
-	.carousel_arrow_left:focus .carousel_arrow,
-	.carousel_arrow_right:focus .carousel_arrow {
-		border-color: #FF1C31;
-	}
 	
 	.project_card {
 		border-left: 50px solid rgba(0,0,0,1);
@@ -1611,7 +1425,6 @@ footer {
 	box-shadow: none;
 	align-items: center;
 	transition: width ease .75s;
-/*	animation: slideOutNext .75s ease 1;*/
 }
 
 .insight_img.zoom_active {
@@ -1668,10 +1481,6 @@ footer {
 	transition: all ease 1s;
 }
 
-#sheep1_container {
-	
-}
-
 .sheep_eyes {
 	animation: sheep_blink 12s ease infinite;
 }
@@ -1689,15 +1498,6 @@ footer {
 	transform: rotate(-36deg) translate(-31.5%, 55%);
 	animation: sheep_mouth_chewing_large_screen 10s ease infinite alternate;
 }
-
-
-
-/*
-.in_view_shift_img {
-	transform: translateY(2em);
-	transition: transform ease 1s;
-}
-*/
 
 .more_work {
 	color: #000;
@@ -1792,28 +1592,13 @@ footer {
 
 
 
-
-
-
-
 /*---------media queries-----------*/
 
 @media (min-width: 900px) {
 	
 	
 	#project_grid {
-/*		display: grid;*/
 		width: 100%;
-/*
-		margin: 0 auto;
-		grid-template-rows: auto auto;
-		grid-template-columns: auto auto 4fr auto;
-		grid-template-areas: 
-			"p_left p_title p_title p_title"
-			"p_left p_body p_body p_body"
-			;
-		padding-bottom: 4em;
-*/
 	}
 	
 	.zoom_active img {
@@ -1856,17 +1641,6 @@ footer {
 	.feature_img {
 		width: 50%;
 		order: 2;
-/*		margin: 3em 0 0 auto;*/
-		
-/*
-		grid-column: 1;
-		grid-row: 1;
-		margin: 2em auto;
-		border: 2px solid #000;
-		box-shadow: 5px 5px 0 #3B301D;
-		cursor: zoom-in;
-		transition: all ease .25s;
-*/
 	}
 	
 	
@@ -1876,10 +1650,6 @@ footer {
 		width: 38%;
 		transform: translateX(calc(-15vw - 4.75em));
 		padding-left: calc(15vw + 6em);
-/*
-		transform: translateX(-3.75em);
-		padding: 0 0 0 3.75em;
-*/
 	}
 
 	.project_heading p {
@@ -2018,10 +1788,6 @@ footer {
 	}
 	
 }
-
-
-
-
 
 
 
