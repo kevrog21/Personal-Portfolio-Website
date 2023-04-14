@@ -1,6 +1,5 @@
 // JavaScript Document
 
-
 // nav underline functionality
 const navElementsArray = document.querySelectorAll(".nav_item")
 
@@ -36,7 +35,7 @@ mobileNavItems.forEach(item => {
 const navLogo = document.querySelector(".nav_logo")
 const topAmpersand = document.querySelector(".amp2")
 
-navLogo.addEventListener("click", turnRed)
+//navLogo.addEventListener("click", turnRed)
 
 function turnRed() {
 	topAmpersand.classList.toggle("red")
@@ -113,6 +112,7 @@ if (viewportWidth > 600) {
 	headerOptions = { rootMargin: '100% 0px -92.5% 0px',}
 }
 
+
 const sectionObserver = new IntersectionObserver (function(entries, sectionObserver) {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
@@ -126,6 +126,11 @@ const sectionObserver = new IntersectionObserver (function(entries, sectionObser
 allSectionHeaders.forEach(secHeader => {
 	sectionObserver.observe(secHeader)
 })
+
+
+
+
+
 
 
 
