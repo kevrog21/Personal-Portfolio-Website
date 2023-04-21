@@ -5,10 +5,10 @@
 //project image zoom
 const bodyEl = document.querySelector("body")
 const projectImg = document.querySelectorAll(".project_img")
+const moreWorkImgWrapper = document.querySelectorAll(".mw_image_wrapper")
 
 projectImg.forEach(img => {
 	img.addEventListener("click", () => {
-		const selectedImgHeight = img.clientHeight
 		img.classList.toggle("zoom_active")
 		// check if zoom is active or inactive
 		if (!img.classList.value.includes("zoom_active")) {
@@ -41,6 +41,33 @@ projectImg.forEach(img => {
 		}
 	})
 })
+
+
+//maybe add mw_zoom_actie styles
+
+moreWorkImgWrapper.forEach(img => {
+	img.addEventListener("click", () => {
+		img.classList.toggle("zoom_active")
+		console.log("clicked")
+		// check if zoom is active or inactive
+		if (!img.classList.value.includes("zoom_active")) {
+			bodyEl.classList.remove("noscroll")
+			
+			if (img.nextElementSibling) {
+				img.nextElementSibling.style.marginTop = "0"
+			} else {
+				img.previousElementSibling.style.marginBottom = "0"
+			}
+			
+		} else {
+			bodyEl.classList.add("noscroll")
+			
+		}
+	})
+})
+
+
+
 
 
 

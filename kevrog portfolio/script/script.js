@@ -68,7 +68,7 @@ const abvFoldArrows = document.querySelector(".downward_arrows2")
 //console.log(mobileNavList)
 
 const topOptions = {
-	threshold: .45,
+	threshold: .4,
 }
 
 const topObserver = new IntersectionObserver (function(entries, topObserver) {
