@@ -1438,7 +1438,8 @@ footer {
 }
 
 .insight_img.zoom_active,
-.project_img.zoom_active {
+.project_img.zoom_active,
+.mw_insight_img_wrapper.zoom_active {
 		width: 100%;
 		margin: 0;
 	}
@@ -1520,6 +1521,7 @@ footer {
 	font-size: 2rem;
 	border-bottom: 2px solid #000;
 	margin: .5em 0;
+	text-align: center;
 }
 
 .project_select {
@@ -1636,16 +1638,6 @@ footer {
 }
 
 .mw_image_grid {
-/*
-	width: 75%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(70vw, auto));
-    grid-gap: 1.5vw;
-    justify-content: center;
-    padding: 3em;
-    grid-auto-flow: row dense;
-*/
 	width: 80%;
 	margin: 2em auto;
 	column-count: 1;
@@ -1653,7 +1645,7 @@ footer {
     box-sizing: border-box;
 }
 
-.mw_image_grid > * {
+.mw_image_wrapper {
     height: auto;
     width: 100%;
     margin: auto;
@@ -1663,12 +1655,77 @@ footer {
 	cursor: pointer;
 }
 	
-.mw_image {
+.mw_column_image {
 	border: 3px solid black;
 	box-shadow: 5px 5px 0px black;
 	margin-bottom: 1em;
 }
 
+.mw_insight_wrapper {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(56,55,52,.96);
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	overflow-y: scroll;
+}
+
+.close_btn {
+	position: fixed;
+	width: 2.5em;
+	height: 2.5em;
+	margin: 10vh 0 0 4vw;
+	cursor: pointer;
+}
+
+.close_btn::before,
+.close_btn::after{
+	width: 100%;
+	height: 10%;
+	position: relative;
+	display: block;
+	content: "";
+	background: white;
+	border-radius: 2px;
+	margin: auto 0;
+}
+
+.close_btn::before {
+	transform: translateY(1.5em) rotate(45deg);
+}
+
+.close_btn::after {
+	transform: translateY(calc(1.2em)) rotate(-45deg);
+}
+
+.mw_hero_card {
+	background: black;
+	width: 70%;
+	margin: 18vh auto 0 auto;
+	padding: 2em 2em 0 2em;
+}
+
+.mw_hero_img {
+	width: 100%;
+	margin: 0 auto;
+	cursor: zoom-in;
+}
+
+.mw_hero_card p {
+	color: #fff;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2em 0;
+}
+
+.mw_insight_img_wrapper {
+	width: 70%;
+	margin: 2em auto;
+	cursor: zoom-in;
+}
 
 
 
@@ -1852,8 +1909,24 @@ footer {
 		column-gap: 1.5em;
 	}
 	
-	.mw_image {
+	.mw_column_image {
 		margin-bottom: 1em;
+	}
+	
+	
+	.close_btn {
+		width: 3em;
+		height: 3em;
+		margin: 12vh 0 0 17vw;
+	}
+	
+	.mw_hero_card {
+		width: 42%;
+		margin: 12vh auto 0 auto;
+	}
+	
+	.mw_insight_img_wrapper {
+		width: 45%;
 	}
 	
 }

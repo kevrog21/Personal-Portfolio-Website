@@ -5,7 +5,8 @@
 //project image zoom
 const bodyEl = document.querySelector("body")
 const projectImg = document.querySelectorAll(".project_img")
-const moreWorkImgWrapper = document.querySelectorAll(".mw_image_wrapper")
+const moreWorkInsightImgWrapper = document.querySelectorAll(".mw_insight_img_wrapper")
+const moreWorkHeroImgWrapper = document.querySelectorAll(".mw_hero_img_wrapper")
 
 projectImg.forEach(img => {
 	img.addEventListener("click", () => {
@@ -45,13 +46,13 @@ projectImg.forEach(img => {
 
 //maybe add mw_zoom_actie styles
 
-moreWorkImgWrapper.forEach(img => {
+
+moreWorkHeroImgWrapper.forEach(img => {
 	img.addEventListener("click", () => {
 		img.classList.toggle("zoom_active")
-		console.log("clicked")
 		// check if zoom is active or inactive
 		if (!img.classList.value.includes("zoom_active")) {
-			bodyEl.classList.remove("noscroll")
+//			bodyEl.classList.remove("noscroll")
 			
 			if (img.nextElementSibling) {
 				img.nextElementSibling.style.marginTop = "0"
@@ -60,7 +61,27 @@ moreWorkImgWrapper.forEach(img => {
 			}
 			
 		} else {
-			bodyEl.classList.add("noscroll")
+			
+			
+		}
+	})
+})
+
+moreWorkInsightImgWrapper.forEach(img => {
+	img.addEventListener("click", () => {
+		img.classList.toggle("zoom_active")
+		// check if zoom is active or inactive
+		if (!img.classList.value.includes("zoom_active")) {
+//			bodyEl.classList.remove("noscroll")
+			
+			if (img.nextElementSibling) {
+				img.nextElementSibling.style.marginTop = "0"
+			} else {
+				img.previousElementSibling.style.marginBottom = "0"
+			}
+			
+		} else {
+			
 			
 		}
 	})
@@ -68,6 +89,35 @@ moreWorkImgWrapper.forEach(img => {
 
 
 
+// reveal and close more work page insights
+
+const moreWorkImgWrapper = document.querySelectorAll(".mw_image_wrapper")
+const closeBtn = document.querySelectorAll(".close_btn")
+const insightWrapper = document.querySelectorAll(".mw_insight_wrapper")
+
+
+
+moreWorkImgWrapper.forEach(img => {
+	img.addEventListener("click", () => {
+		img.nextElementSibling.style.display = "block"
+		bodyEl.classList.add("noscroll")
+	})
+})
+
+
+closeBtn.forEach(btn => {
+	btn.addEventListener("click", () => {
+		btn.parentElement.style.display = "none"
+		bodyEl.classList.remove("noscroll")
+	})
+})
+
+//insightWrapper.forEach(wrapper => {
+//	wrapper.addEventListener("click", () => {
+//		wrapper.style.display = "none"
+//		bodyEl.classList.remove("noscroll")
+//	})
+//})
 
 
 
